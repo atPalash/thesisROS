@@ -82,6 +82,7 @@ class MoveGroupPythonRobot:
         print "============ Available Planning Groups:", self.robot.get_group_names()
 
         self.current_joint_val = []
+        self.proceed_to_next_joint = False
 
     def current_joint_values(self):
         return self.move_group.get_current_joint_values()
@@ -138,12 +139,11 @@ class MoveGroupPythonRobot:
         current_pose = self.move_group.get_current_pose().pose
         return all_close(pose_goal, current_pose, 0.01)
 
-    def go_to_next(self, data=None):
-        if data is 'ready':
-            print data
-            self.proceed_to_next_joint = True
-        else:
-            self.proceed_to_next_joint = False
+    def go_to_next(self, data):
+        self.proceed_to_next_joint = True
+
+    def wait_for_snap(self):
+        self.proceed_to_next_joint = False
 
     @staticmethod
     def write_data(record_path, rec_joint_vals, append=False):

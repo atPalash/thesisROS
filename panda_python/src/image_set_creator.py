@@ -62,14 +62,15 @@ def follow_trained_trajectory(filename):
             joint_values = [float(x) for x in line.split(',')]
             try:
                 follower.go_to_state(joint_val=joint_values, cartesian_val=None)
-                follower.go_to_next()
+                rospy.sleep(1)
+                follower.wait_for_snap()
                 ready_for_snap_msg = "ready"
                 while not rospy.is_shutdown():
+                    if follower.proceed_to_next_joint:
+                        break
                     ready_for_snap_pub.publish(ready_for_snap_msg)
                     rate.sleep()
-                    if follower.proceed_to_next_joint:
-                        follower.go_to_next()
-                        break
+
             except moveit_commander.move_group.MoveItCommanderException:
                 print 'moveit Exception'
                 continue
@@ -84,3 +85,4 @@ if __name__ == '__main__':
 
     joint_values_to_follow_txt = path_to_save_joint_values + '/' + path_to_save_joint_values + str(2) + '.txt'
     follow_trained_trajectory(joint_values_to_follow_txt)
+
