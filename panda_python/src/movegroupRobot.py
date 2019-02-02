@@ -84,6 +84,10 @@ class MoveGroupPythonRobot:
         self.current_joint_val = []
         self.proceed_to_next_joint = False
 
+    def current_coordinate_values(self):
+        return self.move_group.get_current_pose()
+
+
     def current_joint_values(self):
         return self.move_group.get_current_joint_values()
 
@@ -156,3 +160,11 @@ class MoveGroupPythonRobot:
             np.savetxt(record_file, rec_joint_vals, delimiter=',', fmt='%f')
         except:
             print 'error csv'
+
+
+if __name__ == '__main__':
+    robot = MoveGroupPythonRobot()
+    go_to = {'position':{'x': -0.05199, 'y': 0.5493, 'z': 0.26701}, 'orientation':{
+        'x': 0.2249, 'y':0.97433, 'z':0.00850287, 'w': 0.001963}}
+    print robot.current_coordinate_values()
+    robot.go_to_state(joint_val=None, cartesian_val=go_to)

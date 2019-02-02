@@ -5,6 +5,7 @@ import numpy as np
 import moveit_commander
 from std_msgs.msg import String
 
+
 def generate_robot_motion(record_path):
     try:
         recorder = movegroupRobot.MoveGroupPythonRobot()
@@ -53,7 +54,7 @@ def follow_trained_trajectory(filename):
 
     ready_for_snap_pub = rospy.Publisher('ready_for_snap', String, queue_size=1)
     snap_taken_subscriber = rospy.Subscriber('snap_taken', String, follower.go_to_next)
-    rate = rospy.Rate(10)  # 10hz
+    rate = rospy.Rate(100)  # 10hz
 
     file_joint_val = open(filename, "r")
     lines = file_joint_val.readlines()
@@ -62,7 +63,7 @@ def follow_trained_trajectory(filename):
             joint_values = [float(x) for x in line.split(',')]
             try:
                 follower.go_to_state(joint_val=joint_values, cartesian_val=None)
-                rospy.sleep(1)
+                rospy.sleep(0.2)
                 follower.wait_for_snap()
                 ready_for_snap_msg = "ready"
                 while not rospy.is_shutdown():
@@ -83,6 +84,6 @@ if __name__ == '__main__':
     path_to_save_joint_values = 'recorded_joint_val'
     # generate_robot_motion(path_to_save_joint_values)
 
-    joint_values_to_follow_txt = path_to_save_joint_values + '/' + path_to_save_joint_values + str(2) + '.txt'
+    joint_values_to_follow_txt = path_to_save_joint_values + '/' + path_to_save_joint_values + str(3) + '.txt'
     follow_trained_trajectory(joint_values_to_follow_txt)
 

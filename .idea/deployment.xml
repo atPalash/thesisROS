@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="palash@130.230.148.222:22" autoUploadExternalChanges="true" showNewOnSourceInSync="false">
+  <component name="PublishConfigData" serverName="palash@130.230.148.218:22">
     <serverData>
-      <paths name="palash@130.230.148.222:22">
+      <paths name="palash@130.230.148.218:22">
         <serverdata>
           <mappings>
             <mapping deploy="/home/palash/thesisROS" local="$PROJECT_DIR$" />
@@ -10,6 +10,5 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
