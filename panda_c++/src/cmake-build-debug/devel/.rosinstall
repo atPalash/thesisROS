@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/palash/thesis/thesisROS/panda_c++/src/cmake-build-debug/devel/setup.sh
