@@ -118,16 +118,16 @@ class MoveGroupPythonRobot:
 
     def go_to_pose_goal(self, cartesian_val):
         move_group = self.move_group
-        pose_goal = geometry_msgs.msg.Pose()
-        pose_goal.orientation.w = cartesian_val['orientation']['w']
-        pose_goal.orientation.x = cartesian_val['orientation']['x']
-        pose_goal.orientation.y = cartesian_val['orientation']['y']
-        pose_goal.orientation.z = cartesian_val['orientation']['z']
-        pose_goal.position.x = cartesian_val['position']['x']
-        pose_goal.position.y = cartesian_val['position']['y']
-        pose_goal.position.z = cartesian_val['position']['z']
+        # pose_goal = geometry_msgs.msg.Pose()
+        # pose_goal.orientation.w = cartesian_val['orientation']['w']
+        # pose_goal.orientation.x = cartesian_val['orientation']['x']
+        # pose_goal.orientation.y = cartesian_val['orientation']['y']
+        # pose_goal.orientation.z = cartesian_val['orientation']['z']
+        # pose_goal.position.x = cartesian_val['position']['x']
+        # pose_goal.position.y = cartesian_val['position']['y']
+        # pose_goal.position.z = cartesian_val['position']['z']
 
-        move_group.set_pose_target(pose_goal)
+        move_group.set_pose_target(cartesian_val)
         ## Now, we call the planner to compute the plan and execute it.
         plan = move_group.go(wait=True)
         rospy.sleep(2)
@@ -140,8 +140,8 @@ class MoveGroupPythonRobot:
         # For testing:
         # Note that since this section of code will not be included in the tutorials
         # we use the class variable rather than the copied state variable
-        current_pose = self.move_group.get_current_pose().pose
-        return all_close(pose_goal, current_pose, 0.01)
+        # current_pose = self.move_group.get_current_pose().pose
+        # return all_close(cartesian_val, current_pose, 0.01)
 
     def go_to_next(self, data):
         self.proceed_to_next_joint = True

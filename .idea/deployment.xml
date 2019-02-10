@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="palash@130.230.148.218:22">
+  <component name="PublishConfigData" serverName="thesis_thinkpad">
     <serverData>
-      <paths name="palash@130.230.148.218:22">
+      <paths name="thesis_thinkpad">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/palash/thesisROS" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/palash/thesisROS" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
