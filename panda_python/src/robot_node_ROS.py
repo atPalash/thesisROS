@@ -12,6 +12,7 @@ class GripperData:
     def __init__(self):
         self.pose_goal = PoseStamped()
         self.gripper_set = False
+        self.motion_plan = False
 
     def set_gripper(self, position=None, orient=None):
         if position is not None and orient is not None:
@@ -20,6 +21,7 @@ class GripperData:
             self.pose_goal.pose.orientation = orient
             self.pose_goal.pose.position = position
             self.gripper_set = True
+            self.motion_plan = True
 
 
 def gripping_callback(data, gripper_info):
@@ -31,14 +33,19 @@ if __name__ == '__main__':
 
     gripper_data = GripperData()
     gripping_point_sub = rospy.Subscriber('reply_gripping_point', PoseStamped, gripping_callback, gripper_data)
-    gripping_point_pub = rospy.Publisher('find_gripping_point', PoseStamped, queue_size=1)
+    # gripping_point_pub = rospy.Publisher('find_gripping_point', PoseStamped, queue_size=1)
+    motion_plan_made = False
+    rate = rospy.Rate(10)  # 10hz
+    while not rospy.is_shutdown():
+        if gripper_data.motion_plan and not motion_plan_made:
+            motion_plan_made = True
+            print ([gripper_data.pose_goal.pose.position.x, gripper_data.pose_goal.pose.position.y, gripper_data.pose_goal.pose.position.z])
+            planner = motion_planner.MotionPlanner(visual=False, debug=True)
+            example_path = np.array(
+                [[arm.x, arm.y, arm.z], [gripper_data.pose_goal.pose.position.x, gripper_data.pose_goal.pose.position.y, arm.z],
+                 [gripper_data.pose_goal.pose.position.x, gripper_data.pose_goal.pose.position.y, gripper_data.pose_goal.pose.position.z]])
 
-    # print(arm.x, arm.y, arm.z)
-    if gripper_data.gripper_set:
-        planner = motion_planner.MotionPlanner(visual=False, debug=True)
-        example_path = np.array([[arm.x, arm.y, arm.z], [gripper_data.pose_goal.pose.x, gripper_data.pose_goal.pose.y, arm.z],
-                                 [gripper_data.pose_goal.pose.x, gripper_data.pose_goal.pose.y, gripper_data.pose_goal.pose.z]])
+            motion_plan = planner.apply_trapezoid_vel(example_path)
 
-        motion_plan = planner.apply_trapezoid_vel(example_path)
-
-        arm.send_trajectory(motion_plan)
+            arm.send_trajectory(motion_plan)
+        rate.sleep()

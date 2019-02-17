@@ -15,7 +15,7 @@ from std_msgs.msg import MultiArrayDimension
 
 
 class FrankaRos:
-    def __init__(self, log=False, ip='130.230.37.115', debug=False, init_ros_node=False):
+    def __init__(self, log=False, ip='170.16.0.2', debug=False, init_ros_node=False):
         """Initialisation of the FrankaRos class.
 
         Sets boolean flags such as logging and print statements for debugging. Sets the IP
@@ -85,9 +85,9 @@ class FrankaRos:
         # TODO docstring
         if self.log:
             rospy.loginfo(data.data)
-        self.x = data.data[0]
-        self.y = data.data[1]
-        self.z = data.data[2]
+        self.x = data.data[12]
+        self.y = data.data[13]
+        self.z = data.data[14]
 
     def move_to(self, x, y, z, speed):
         """Moves robot end effector to desired coordinates (in robot reference frame) given a
@@ -105,7 +105,7 @@ class FrankaRos:
         self.pub_move_to.publish(self.target_coords)
 
     def send_trajectory(self, trajectory):
-        # TODO docstring
+        print("received trajectory")
         for x, y, z, speed in trajectory:
             self.move_to(x, y, z, speed)
             time.sleep(0.005)  # control loop

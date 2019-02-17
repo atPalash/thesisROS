@@ -101,6 +101,7 @@
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopResult" />
       <config projectName="Project" targetName="tf_generate_messages_eus" />
       <config projectName="Project" targetName="franka_hw" />
+      <config projectName="Project" targetName="echo_robot_state" />
       <config projectName="Project" targetName="_run_tests_franka_hw" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspAction" />
       <config projectName="Project" targetName="sensor_msgs_generate_messages_nodejs" />
@@ -113,7 +114,6 @@
       <config projectName="Project" targetName="controller_manager_msgs_generate_messages_eus" />
       <config projectName="Project" targetName="std_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="franka_control_generate_messages_py" />
-      <config projectName="Project" targetName="generate_cartesian_pose_motion" />
       <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetEEFrame" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="franka_control_generate_messages_cpp" />
@@ -228,10 +228,6 @@
       <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_ros/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_ros/package.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_visualization/launch/franka_visualization.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_visualization/launch/franka_visualization.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_visualization/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_visualization/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/echo_robot_state.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/echo_robot_state.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_velocity_motion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_velocity_motion.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -246,8 +242,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70">
-              <caret line="216" selection-start-line="216" selection-end-line="216" />
+            <state relative-caret-position="380">
+              <caret line="204" column="94" selection-start-line="204" selection-start-column="94" selection-end-line="204" selection-end-column="94" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
                 <element signature="e#266#286#0" expanded="true" />
@@ -1497,16 +1493,18 @@
       <workItem from="1550321030430" duration="2008000" />
       <workItem from="1550323131707" duration="4552000" />
       <workItem from="1550397175754" duration="1446000" />
+      <workItem from="1550399569577" duration="2227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26589000" />
+    <option name="totallyTimeSpent" value="28816000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1779989" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18021005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1521,7 +1519,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32810867" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.3291536" />
-      <window_info anchor="bottom" id="File Transfer" order="12" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.3291536" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.47753397" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1737,8 +1735,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="216" selection-start-line="216" selection-end-line="216" />
+        <state relative-caret-position="380">
+          <caret line="204" column="94" selection-start-line="204" selection-start-column="94" selection-end-line="204" selection-end-column="94" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
             <element signature="e#266#286#0" expanded="true" />

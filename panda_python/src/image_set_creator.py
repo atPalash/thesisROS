@@ -42,10 +42,7 @@ def generate_robot_motion(record_path):
                         rate.sleep()
         except KeyboardInterrupt:
             print 'data collected'
-        print "============ Python tutorial demo complete!"
     except rospy.ROSInterruptException:
-        return
-    except KeyboardInterrupt:
         return
 
 
@@ -82,8 +79,11 @@ def follow_trained_trajectory(filename):
 
 if __name__ == '__main__':
     path_to_save_joint_values = 'recorded_joint_val'
+
+    # comment out while collecting joint values
     # generate_robot_motion(path_to_save_joint_values)
 
-    joint_values_to_follow_txt = path_to_save_joint_values + '/' + path_to_save_joint_values + str(3) + '.txt'
+    # comment while collecting image for dataset generation
+    joint_values_to_follow_txt = path_to_save_joint_values + '/' + path_to_save_joint_values + str(4) + '.txt'
     follow_trained_trajectory(joint_values_to_follow_txt)
 

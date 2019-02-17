@@ -315,8 +315,7 @@ if __name__ == '__main__':
     planner = MotionPlanner(visual=False, debug=True)
     #
     # EXAMPLE MOTION TO TEST IF PARTS ARE WORKING
-    example_path = np.array([[arm.x, arm.y, arm.z], [-0.042864711358045156, 0.4755047197139932, 0.466159386147],
-                             [-0.042864711358045156, 0.4755047197139932, 0.25797107421668636]])  # move +y
+    example_path = np.array([[arm.x, arm.y, arm.z], [-6.86302224617e-05, -0.306911210212, 0.589742275634]])  # move +y
     motion_plan = planner.apply_trapezoid_vel(example_path)
     print(motion_plan)
     arm.send_trajectory(motion_plan)

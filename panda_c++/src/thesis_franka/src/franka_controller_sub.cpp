@@ -130,7 +130,6 @@ void subscribe_target_motion() {
     ros::Rate loop_rate(2000);  // 2 kHz
 
     while (ros::ok()) {
-        ROS_INFO_STREAM("transformation mat in thread: " << current_pose_);
         for(int i = 0; i<16; i++){
             states.data[i] = current_pose_[i];
         }
@@ -177,7 +176,7 @@ int main(int argc, char** argv) {
         double time = 0.0;
 
         auto initial_pose = robot.readOnce().O_T_EE_d;
-        std::array<double,16> current_pose = initial_pose;
+        current_pose_ = initial_pose;
 
         // call the subscription thread
 
@@ -196,17 +195,11 @@ int main(int argc, char** argv) {
             time += time_step.toSec();
 
             auto state_pose = robot_state.O_T_EE_d;
-            std::array<double , 16> current_pose = state_pose;
+            current_pose_ = state_pose;
 
-            current_pose_ = current_pose;
-            double cur_x = current_pose[12];
-            double cur_y = current_pose[13];
-            double cur_z = current_pose[14];
-//            std::cout << "cur_x " << cur_x << ", cur_y "<< cur_y << ", cur_z "<< cur_z << std::endl;
-            ROS_INFO_STREAM("transformation mat contol loop: "<< current_pose);
-            now_x = cur_x;
-            now_y = cur_y;
-            now_z = cur_z;
+            double cur_x = current_pose_[12];
+            double cur_y = current_pose_[13];
+            double cur_z = current_pose_[14];
 
             // initially, the robot moves to its current position (-> no motion)
             if (isnan(target_x)) {
@@ -214,7 +207,6 @@ int main(int argc, char** argv) {
                 target_y = cur_y;
                 target_z = cur_z;
             }
-
             double vec_x = target_x - cur_x;
             double vec_y = target_y - cur_y;
             double vec_z = target_z - cur_z;

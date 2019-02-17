@@ -164,7 +164,23 @@ class MoveGroupPythonRobot:
 
 if __name__ == '__main__':
     robot = MoveGroupPythonRobot()
-    go_to = {'position':{'x': -0.05199, 'y': 0.5493, 'z': 0.26701}, 'orientation':{
-        'x': 0.2249, 'y':0.97433, 'z':0.00850287, 'w': 0.001963}}
+# ready cartesian pose:
+#   frame_id: "/panda_link0"
+#   pose:
+#       position:
+#           x: -6.86302224617e-05
+#           y: -0.306911210212
+#           z: 0.589742275634
+#       orientation:
+#           x: -0.38278353548
+#           y: 0.923837689903
+#           z: 0.000539873037812
+#           w: 0.000629458136054
+# ready joint pose [j1..j7]
+# [-1.5712350861180224, -0.7851329734534546, -0.00014185679283834537, -2.3565126153003213, 0.00032089026875069563,
+#   1.570605999765736, 0.7848645688907966]
+
+    joint_val= [-1.5712350861180224, -0.3851329734534546, -0.00014185679283834537, -2.1565126153003213, 0.00032089026875069563, 1.770605999765736, 0.7848645688907966]
+    robot.go_to_state(joint_val=joint_val, cartesian_val=None)
+    print joint_val
     print robot.current_coordinate_values()
-    robot.go_to_state(joint_val=None, cartesian_val=go_to)
