@@ -4,6 +4,18 @@
 
 #include <franka/exception.h>
 #include <franka/robot.h>
+#include <iterator>
+
+namespace {
+    template <class T, size_t N>
+    std::ostream& operator<<(std::ostream& ostream, const std::array<T, N>& array) {
+      ostream << "[";
+      std::copy(array.cbegin(), array.cend() - 1, std::ostream_iterator<T>(ostream, ","));
+      std::copy(array.cend() - 1, array.cend(), std::ostream_iterator<T>(ostream));
+      ostream << "]";
+      return ostream;
+    }
+}
 
 /**
  * @example echo_robot_state.cpp
@@ -23,7 +35,7 @@ int main(int argc, char** argv) {
     robot.read([&count](const franka::RobotState& robot_state) {
       // Printing to std::cout adds a delay. This is acceptable for a read loop such as this, but
       // should not be done in a control loop.
-      std::cout << robot_state << std::endl;
+      std::cout << robot_state.O_T_EE_d << std::endl;
       return count++ < 100;
     });
 

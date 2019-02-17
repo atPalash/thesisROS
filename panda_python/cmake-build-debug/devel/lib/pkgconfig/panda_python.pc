@@ -1,0 +1,8 @@
+prefix=/home/palash/thesis/thesisROS/panda_python/cmake-build-debug/devel
+
+Name: panda_python
+Description: Description of panda_python
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/palash/thesis/thesisROS/panda_python/cmake-build-debug/devel/lib 
+Requires: 

@@ -1,9 +1,3 @@
-/*
-Authors:
-Fabian Falck
-Petar Kormushev
-*/
-
 #include <cmath>
 #include <iostream>
 
@@ -33,6 +27,7 @@ double now_x = 0.0;
 double now_y = 0.0;
 double now_z = 0.0;
 double speed = 0.0;
+std::array<double, 16> current_pose_;
 double target_gripper_width = 1.0;
 double target_gripper_speed = 0.1;
 double target_gripper_force = 60;
@@ -47,18 +42,22 @@ franka::Gripper* gripper = nullptr;  // just for the sake of creating a global o
  * @warning Before executing this example, make sure there is enough space in front of the robot.
  */
 
-
+namespace {
+    template <class T, size_t N>
+    std::ostream& operator<<(std::ostream& ostream, const std::array<T, N>& array) {
+        ostream << "[";
+        std::copy(array.cbegin(), array.cend() - 1, std::ostream_iterator<T>(ostream, ","));
+        std::copy(array.cend() - 1, array.cend(), std::ostream_iterator<T>(ostream));
+        ostream << "]";
+        return ostream;
+    }
+}
 // parameters to set
 double speed_limit = 0.10;  // was tested to work properly
 
 
 bool speed_below_limit(double target_speed) {
-    if (target_speed <= speed_limit) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return target_speed <= speed_limit;
 }
 
 
@@ -92,25 +91,6 @@ void graspCallback(const std_msgs::Float64MultiArray::ConstPtr& msg)
     // bool moved = gripper->move(target_gripper_width, target_gripper_speed);  //  , target_gripper_force
     bool grasped = gripper->grasp(target_gripper_width, target_gripper_speed, target_gripper_force);  //
     cout << "grasped " << grasped << endl;
-    // bool moved = gripper->move(target_gripper_width+0.02, target_gripper_speed);  //  , target_gripper_force
-    // cout << "moved " << moved << endl;
-
-    // if(gripper->grasp(target_gripper_width, target_gripper_speed, target_gripper_force)) {
-    //   bool stopped = gripper->stop();
-    //   cout << stopped << endl;
-    // }
-    // gripper->stop();
-    // if () {
-    //   gripper->stop();
-    // }  //
-    // sleep(1);
-    // gripper->stop();  // releasing the object
-
-    // ros::Rate loop_rate(2000);  // 2 kHz
-    // while (ros::ok()) {
-    //   ros::spinOnce();
-    //   loop_rate.sleep();
-    // }
 
     // new target coordinates and speed now from within the control loop
     // TODO modify x,y,z here
@@ -134,9 +114,6 @@ void moveCallback(const std_msgs::Float64MultiArray::ConstPtr& msg)
         moved = gripper->move(target_gripper_width, target_gripper_speed);  //
         cout << "moving " << moved << endl;
     }
-    cout << "moved " << moved << endl;
-    // bool moved = gripper->move(target_gripper_width+0.02, target_gripper_speed);  //  , target_gripper_force
-    // cout << "moved " << moved << endl;
 }
 
 
@@ -148,15 +125,16 @@ void subscribe_target_motion() {
     ros::Subscriber sub_grasp = node_handle.subscribe("franka_gripper_grasp", 1, graspCallback);
     ros::Subscriber sub_move = node_handle.subscribe("franka_gripper_move", 1, moveCallback);
     std_msgs::Float64MultiArray states;
+    states.data.resize(16);
     ros::Publisher publisher = node_handle.advertise<std_msgs::Float64MultiArray>("franka_current_position", 1);
     ros::Rate loop_rate(2000);  // 2 kHz
 
     while (ros::ok()) {
-        states.data.push_back(now_x);
-        states.data.push_back(now_y);
-        states.data.push_back(now_z);
+        ROS_INFO_STREAM("transformation mat in thread: " << current_pose_);
+        for(int i = 0; i<16; i++){
+            states.data[i] = current_pose_[i];
+        }
         publisher.publish(states);
-//    cout << "pos: " << now_x << endl;
         ros::spinOnce();
         loop_rate.sleep();
     }
@@ -174,13 +152,8 @@ int main(int argc, char** argv) {
 
         franka::Robot robot(argv[1]);
         gripper = new franka::Gripper(argv[1]);
-        bool gripper_move = gripper->homing();
+        gripper->homing();
         sleep(5);
-        cout << "gripper created "<< gripper_move  << endl;
-
-        // Set additional parameters always before the control loop, NEVER in the control loop!
-        // Set the joint impedance.
-        // robot.setJointImpedance({{300, 300, 300, 250, 250, 200, 200}});
 
         // Set the collision behavior.
         std::array<double, 7> lower_torque_thresholds_nominal{
@@ -204,13 +177,11 @@ int main(int argc, char** argv) {
         double time = 0.0;
 
         auto initial_pose = robot.readOnce().O_T_EE_d;
-        std::array<double, 16> current_pose = initial_pose;
+        std::array<double,16> current_pose = initial_pose;
 
         // call the subscription thread
 
         std::thread t1(subscribe_target_motion);
-
-        cout << "before control loop" << endl;
 
         robot.control([=, &time](const franka::RobotState& robot_state,
                                  franka::Duration time_step) -> franka::CartesianVelocities {
@@ -225,13 +196,14 @@ int main(int argc, char** argv) {
             time += time_step.toSec();
 
             auto state_pose = robot_state.O_T_EE_d;
-            std::array<double, 16> current_pose = state_pose;
+            std::array<double , 16> current_pose = state_pose;
 
-
+            current_pose_ = current_pose;
             double cur_x = current_pose[12];
             double cur_y = current_pose[13];
             double cur_z = current_pose[14];
-
+//            std::cout << "cur_x " << cur_x << ", cur_y "<< cur_y << ", cur_z "<< cur_z << std::endl;
+            ROS_INFO_STREAM("transformation mat contol loop: "<< current_pose);
             now_x = cur_x;
             now_y = cur_y;
             now_z = cur_z;
@@ -242,15 +214,6 @@ int main(int argc, char** argv) {
                 target_y = cur_y;
                 target_z = cur_z;
             }
-
-            // target coordinates
-
-            // subscriber in separate thread
-
-            // cout << target_x;
-
-
-            // computing the motion
 
             double vec_x = target_x - cur_x;
             double vec_y = target_y - cur_y;
@@ -280,20 +243,6 @@ int main(int argc, char** argv) {
             franka::CartesianVelocities output = {{vel_x, vel_y, vel_z, 0.0, 0.0, 0.0}};
 
             double vel_norm = sqrt(vel_x*vel_x + vel_y*vel_y + vel_z*vel_z);
-
-            stopping the motino properly
-            if (vel_norm < 0.001) {
-                // stop program when target reached
-                std::cout << std::endl << "Finished motion, shutting down..." << std::endl << std::flush;
-                franka::CartesianVelocities output = {{0.0, 0.0, 0.0, 0.0, 0.0, 0.0}};
-                return franka::MotionFinished(output);
-            }
-
-            franka::CartesianVelocities output = {{0.0, 0.0, 0.0, 0.0, 0.0, 0.0}};
-            if (time >= 2 * time_max) {
-                std::cout << std::endl << "Finished motion, shutting down example" << std::endl;
-                return franka::MotionFinished(output);
-            }
             return output;
         });
     } catch (const franka::Exception& e) {

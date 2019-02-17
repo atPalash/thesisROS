@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="thesis_thinkpad">
+    <serverData>
+      <paths name="thesis_thinkpad">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/palash/thesisROS/panda_c++" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

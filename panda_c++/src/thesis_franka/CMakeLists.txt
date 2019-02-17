@@ -32,7 +32,7 @@ catkin_package(
 
 add_executable(franka_controller_sub src/franka_controller_sub.cpp)
 add_executable(cartesian_impedance_control src/cartesian_impedance_control.cpp src/examples_common.cpp)
-add_executable(generate_cartesian_pose_motion src/generate_cartesian_pose_motion.cpp src/examples_common.cpp)
+add_executable(echo_robot_state src/echo_robot_state.cpp src/examples_common.cpp)
 
 target_link_libraries(franka_controller_sub PUBLIC
   ${Franka_LIBRARIES}
@@ -42,7 +42,7 @@ target_link_libraries(cartesian_impedance_control PUBLIC
   ${Franka_LIBRARIES}
   ${catkin_LIBRARIES}
 )
-target_link_libraries(generate_cartesian_pose_motion PUBLIC
+target_link_libraries(echo_robot_state PUBLIC
   ${Franka_LIBRARIES}
   ${catkin_LIBRARIES}
 )
@@ -58,7 +58,7 @@ target_include_directories(cartesian_impedance_control SYSTEM PUBLIC
   ${EIGEN3_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
 )
-target_include_directories(generate_cartesian_pose_motion SYSTEM PUBLIC
+target_include_directories(echo_robot_state SYSTEM PUBLIC
   ${Franka_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}

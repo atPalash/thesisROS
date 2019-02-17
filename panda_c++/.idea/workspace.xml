@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="roscpp_generate_messages_py" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetKFrame" />
+      <config projectName="Project" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionFeedback" />
+      <config projectName="Project" targetName="clean_test_results" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="franka_msgs_genpy" />
+      <config projectName="Project" targetName="franka_control_genlisp" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="franka_msgs_genlisp" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetFullCollisionBehavior" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages_py" />
+      <config projectName="Project" targetName="franka_control_genpy" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="franka_example_controllers_genlisp" />
+      <config projectName="Project" targetName="robot_joint_state_publisher" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionFeedback" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveResult" />
+      <config projectName="Project" targetName="dynamic_reconfigure_gencfg" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveAction" />
+      <config projectName="Project" targetName="_franka_example_controllers_generate_messages_check_deps_JointTorqueComparison" />
+      <config projectName="Project" targetName="franka_control_node" />
+      <config projectName="Project" targetName="_run_tests_franka_hw_rostest" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_example_controllers_genpy" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingFeedback" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="_catkin_empty_exported_target" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionResult" />
+      <config projectName="Project" targetName="cartesian_impedance_control" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="actionlib_generate_messages_py" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionGoal" />
+      <config projectName="Project" targetName="actionlib_generate_messages_eus" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="Project" targetName="download_extra_data" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspGoal" />
+      <config projectName="Project" targetName="clean_test_results_franka_hw" />
+      <config projectName="Project" targetName="franka_control_generate_messages_nodejs" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingAction" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetCartesianImpedance" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionResult" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="franka_example_controllers_gencpp" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionGoal" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionFeedback" />
+      <config projectName="Project" targetName="franka_control_gennodejs" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_control_generate_messages_lisp" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_py" />
+      <config projectName="Project" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="Project" targetName="gmock_main" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages_eus" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_hw_test" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="gtest_main" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages_py" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_control_generate_messages" />
+      <config projectName="Project" targetName="franka_controller_sub" />
+      <config projectName="Project" targetName="run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="franka_example_controllers_geneus" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingGoal" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryAction" />
+      <config projectName="Project" targetName="franka_gripper" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetForceTorqueCollisionBehavior" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryResult" />
+      <config projectName="Project" targetName="tf_generate_messages_nodejs" />
+      <config projectName="Project" targetName="franka_example_controllers_gencfg" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_nodejs" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages" />
+      <config projectName="Project" targetName="run_tests_franka_hw_rostest" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopResult" />
+      <config projectName="Project" targetName="tf_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_hw" />
+      <config projectName="Project" targetName="_run_tests_franka_hw" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspAction" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="_franka_msgs_generate_messages_check_deps_Errors" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingResult" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspFeedback" />
+      <config projectName="Project" targetName="gtest" />
+      <config projectName="Project" targetName="franka_state_controller" />
+      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="franka_control_generate_messages_py" />
+      <config projectName="Project" targetName="generate_cartesian_pose_motion" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetEEFrame" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_control_generate_messages_cpp" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="franka_example_controllers_gennodejs" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionGoal" />
+      <config projectName="Project" targetName="tf_generate_messages_cpp" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages_lisp" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="gmock" />
+      <config projectName="Project" targetName="franka_gripper_genlisp" />
+      <config projectName="Project" targetName="roscpp_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionGoal" />
+      <config projectName="Project" targetName="doxygen" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopGoal" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionFeedback" />
+      <config projectName="Project" targetName="tests" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_lisp" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveGoal" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveFeedback" />
+      <config projectName="Project" targetName="franka_example_controllers" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspResult" />
+      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages_cpp" />
+      <config projectName="Project" targetName="franka_gripper_gennodejs" />
+      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_cpp" />
+      <config projectName="Project" targetName="franka_control_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages_cpp" />
+      <config projectName="Project" targetName="_run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" />
+      <config projectName="Project" targetName="run_tests_franka_hw" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages_lisp" />
+      <config projectName="Project" targetName="run_tests" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetLoad" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopFeedback" />
+      <config projectName="Project" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="Project" targetName="franka_control_geneus" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionResult" />
+      <config projectName="Project" targetName="franka_gripper_node" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopAction" />
+      <config projectName="Project" targetName="franka_msgs_gennodejs" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryGoal" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages_nodejs" />
+      <config projectName="Project" targetName="franka_msgs_geneus" />
+      <config projectName="Project" targetName="franka_gripper_geneus" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryFeedback" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionResult" />
+      <config projectName="Project" targetName="tf_generate_messages_lisp" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionGoal" />
+      <config projectName="Project" targetName="franka_control_gencpp" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspEpsilon" />
+      <config projectName="Project" targetName="franka_control_services" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages_nodejs" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionFeedback" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionResult" />
+      <config projectName="Project" targetName="gripper_joint_state_publisher" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetJointImpedance" />
+      <config projectName="Project" targetName="franka_msgs_gencpp" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="tf_generate_messages_py" />
+      <config projectName="Project" targetName="franka_gripper_gencpp" />
+      <config projectName="Project" targetName="franka_gripper_genpy" />
+      <config projectName="Project" targetName="_franka_msgs_generate_messages_check_deps_FrankaState" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCATKIN_DEVEL_PREFIX=/home/palash/thesis/thesisROS/panda_c++/devel -DCMAKE_INSTALL_PREFIX=/home/palash/thesis/thesisROS/panda_c++/install" GENERATION_DIR="$PROJECT_DIR$/build">
+        <ADDITIONAL_GENERATION_ENVIRONMENT>
+          <envs>
+            <env name="PATH" value="/opt/ros/kinetic/bin:/usr/local/cuda-9.0/bin:/home/palash/bin:/home/palash/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin" />
+            <env name="PKG_CONFIG_PATH" value="/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig" />
+            <env name="PYTHONPATH" value="/opt/ros/kinetic/lib/python2.7/dist-packages" />
+            <env name="CMAKE_PREFIX_PATH" value="/opt/ros/kinetic" />
+            <env name="ROS_PACKAGE_PATH" value="/opt/ros/kinetic/share" />
+            <env name="LD_LIBRARY_PATH" value="/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64" />
+            <env name="ROSLISP_PACKAGE_DIRECTORIES" value="" />
+            <env name="PWD" value="/opt/ros/kinetic" />
+            <env name="SHLVL" value="2" />
+            <env name="_" value="/usr/bin/env" />
+          </envs>
+        </ADDITIONAL_GENERATION_ENVIRONMENT>
+      </configuration>
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="176e56c0-f007-4a54-ba42-b6ddd0ed0afb" name="Default Changelist" comment="checking publish of transformation matrix">
+      <change beforePath="$PROJECT_DIR$/src/franka_ros" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_control/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_control/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_control/src/franka_state_controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_control/src/franka_state_controller.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_description/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_description/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_example_controllers/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_example_controllers/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_example_controllers/src/cartesian_pose_example_controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_example_controllers/src/cartesian_pose_example_controller.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_gripper/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_gripper/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_hw/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_hw/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_hw/src/franka_hw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_hw/src/franka_hw.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_msgs/msg/FrankaState.msg" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_msgs/msg/FrankaState.msg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_msgs/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_msgs/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_ros/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_ros/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_visualization/launch/franka_visualization.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_visualization/launch/franka_visualization.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_visualization/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_visualization/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/echo_robot_state.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/echo_robot_state.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_velocity_motion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_velocity_motion.cpp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-70">
+              <caret line="216" selection-start-line="216" selection-end-line="216" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#266#286#0" expanded="true" />
+                <element signature="e#1199#1218#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>target_x</find>
+      <find>def</find>
+      <find>current_pose</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/thesis_franka/src/motion_with_control.cpp" />
+        <option value="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp" />
+        <option value="$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="panda_c++" type="b2602c69:ProjectViewProjectNode" />
+              <item name="panda_c++" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="panda_c++" type="b2602c69:ProjectViewProjectNode" />
+              <item name="panda_c++" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="panda_c++" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda_c++" type="b2602c69:ProjectViewProjectNode" />
+              <item name="panda_c++" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="panda_c++" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda_c++" type="b2602c69:ProjectViewProjectNode" />
+              <item name="panda_c++" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="panda_c++" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="thesis_franka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda_c++" type="b2602c69:ProjectViewProjectNode" />
+              <item name="panda_c++" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="panda_c++" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="thesis_franka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/clionTest/main.cpp" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.franka_control_node">
+    <configuration name="_catkin_empty_exported_target" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_catkin_empty_exported_target" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_ErrorRecoveryAction" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_ErrorRecoveryAction" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_ErrorRecoveryActionFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_ErrorRecoveryActionFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_ErrorRecoveryActionGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_ErrorRecoveryActionGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_ErrorRecoveryActionResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_ErrorRecoveryActionResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_ErrorRecoveryFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_ErrorRecoveryFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_ErrorRecoveryGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_ErrorRecoveryGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_ErrorRecoveryResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_ErrorRecoveryResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_SetCartesianImpedance" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_SetCartesianImpedance" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_SetEEFrame" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_SetEEFrame" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_SetForceTorqueCollisionBehavior" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_SetForceTorqueCollisionBehavior" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_SetFullCollisionBehavior" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_SetFullCollisionBehavior" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_SetJointImpedance" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_SetJointImpedance" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_SetKFrame" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_SetKFrame" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_control_generate_messages_check_deps_SetLoad" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_control_generate_messages_check_deps_SetLoad" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_example_controllers_generate_messages_check_deps_JointTorqueComparison" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_example_controllers_generate_messages_check_deps_JointTorqueComparison" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_GraspAction" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_GraspAction" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_GraspActionFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_GraspActionFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_GraspActionGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_GraspActionGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_GraspActionResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_GraspActionResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_GraspEpsilon" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_GraspEpsilon" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_GraspFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_GraspFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_GraspGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_GraspGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_GraspResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_GraspResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_HomingAction" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_HomingAction" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_HomingActionFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_HomingActionFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_HomingActionGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_HomingActionGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_HomingActionResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_HomingActionResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_HomingFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_HomingFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_HomingGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_HomingGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_HomingResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_HomingResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_MoveAction" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_MoveAction" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_MoveActionFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_MoveActionFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_MoveActionGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_MoveActionGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_MoveActionResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_MoveActionResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_MoveFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_MoveFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_MoveGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_MoveGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_MoveResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_MoveResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_StopAction" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_StopAction" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_StopActionFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_StopActionFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_StopActionGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_StopActionGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_StopActionResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_StopActionResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_StopFeedback" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_StopFeedback" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_StopGoal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_StopGoal" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_gripper_generate_messages_check_deps_StopResult" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_gripper_generate_messages_check_deps_StopResult" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_msgs_generate_messages_check_deps_Errors" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_msgs_generate_messages_check_deps_Errors" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_franka_msgs_generate_messages_check_deps_FrankaState" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_franka_msgs_generate_messages_check_deps_FrankaState" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_franka_hw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_run_tests_franka_hw" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_franka_hw_rostest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_run_tests_franka_hw_rostest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="actionlib_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="actionlib_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="actionlib_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="actionlib_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="actionlib_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="actionlib_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="actionlib_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="actionlib_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="actionlib_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cartesian_impedance_control" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="cartesian_impedance_control" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="cartesian_impedance_control">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clean_test_results_franka_hw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="clean_test_results_franka_hw" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="control_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="control_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="control_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="control_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="control_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="control_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="control_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="control_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="control_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="control_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="controller_manager_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="controller_manager_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="controller_manager_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="controller_manager_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="controller_manager_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="controller_manager_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="controller_manager_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="controller_manager_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="controller_manager_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="controller_manager_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dynamic_reconfigure_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="dynamic_reconfigure_gencfg" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="dynamic_reconfigure_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="dynamic_reconfigure_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="dynamic_reconfigure_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="dynamic_reconfigure_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dynamic_reconfigure_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="dynamic_reconfigure_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="echo_robot_state" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="echo_robot_state" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="echo_robot_state">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_gencpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_gencpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_generate_messages" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_generate_messages" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_geneus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_geneus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_genlisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_genlisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_gennodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_gennodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_genpy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_genpy" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_node" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_node" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="franka_control_node">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_control_services" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_control_services" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_controller_sub" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_controller_sub" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="franka_controller_sub">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_gencfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_gencfg" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_gencpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_gencpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_generate_messages" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_generate_messages" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_geneus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_geneus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_genlisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_genlisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_gennodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_gennodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_example_controllers_genpy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_example_controllers_genpy" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_gencpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_gencpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_generate_messages" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_generate_messages" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_geneus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_geneus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_genlisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_genlisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_gennodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_gennodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_genpy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_genpy" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_gripper_node" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_gripper_node" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="franka_gripper_node">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_hw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_hw" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_hw_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_hw_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="franka_hw_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_gencpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_gencpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_generate_messages" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_generate_messages" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_geneus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_geneus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_genlisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_genlisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_gennodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_gennodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_msgs_genpy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_msgs_genpy" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="franka_state_controller" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="franka_state_controller" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="geometry_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="geometry_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gripper_joint_state_publisher" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="gripper_joint_state_publisher" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="gripper_joint_state_publisher">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="robot_joint_state_publisher" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="robot_joint_state_publisher" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="robot_joint_state_publisher">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roscpp_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="roscpp_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roscpp_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="roscpp_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="rosgraph_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="rosgraph_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="run_tests" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_franka_hw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="run_tests_franka_hw" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_franka_hw_rostest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="run_tests_franka_hw_rostest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sensor_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sensor_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sensor_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sensor_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sensor_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="sensor_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="std_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="std_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="std_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="std_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tests" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tf2_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tf2_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tf2_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tf2_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tf2_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tf2_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tf_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tf_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tf_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tf_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tf_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tf_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tf_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tf_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tf_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="tf_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="trajectory_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="trajectory_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="trajectory_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="trajectory_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="trajectory_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="trajectory_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="trajectory_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="trajectory_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="trajectory_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="trajectory_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.clean_test_results" />
+      <item itemvalue="Application.download_extra_data" />
+      <item itemvalue="Application.doxygen" />
+      <item itemvalue="Application.run_tests" />
+      <item itemvalue="Application.tests" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_ErrorRecoveryAction" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_ErrorRecoveryActionFeedback" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_ErrorRecoveryActionGoal" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_ErrorRecoveryActionResult" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_ErrorRecoveryFeedback" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_ErrorRecoveryGoal" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_ErrorRecoveryResult" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_SetCartesianImpedance" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_SetEEFrame" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_SetForceTorqueCollisionBehavior" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_SetFullCollisionBehavior" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_SetJointImpedance" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_SetKFrame" />
+      <item itemvalue="Application._franka_control_generate_messages_check_deps_SetLoad" />
+      <item itemvalue="Application.controller_manager_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.controller_manager_msgs_generate_messages_eus" />
+      <item itemvalue="Application.controller_manager_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.controller_manager_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.controller_manager_msgs_generate_messages_py" />
+      <item itemvalue="Application.franka_control_gencpp" />
+      <item itemvalue="Application.franka_control_generate_messages" />
+      <item itemvalue="Application.franka_control_generate_messages_cpp" />
+      <item itemvalue="Application.franka_control_generate_messages_eus" />
+      <item itemvalue="Application.franka_control_generate_messages_lisp" />
+      <item itemvalue="Application.franka_control_generate_messages_nodejs" />
+      <item itemvalue="Application.franka_control_generate_messages_py" />
+      <item itemvalue="Application.franka_control_geneus" />
+      <item itemvalue="Application.franka_control_genlisp" />
+      <item itemvalue="Application.franka_control_gennodejs" />
+      <item itemvalue="Application.franka_control_genpy" />
+      <item itemvalue="Application.franka_control_node" />
+      <item itemvalue="Application.franka_control_services" />
+      <item itemvalue="Application.franka_state_controller" />
+      <item itemvalue="Application.tf2_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.tf2_msgs_generate_messages_eus" />
+      <item itemvalue="Application.tf2_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.tf2_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.tf2_msgs_generate_messages_py" />
+      <item itemvalue="Application.tf_generate_messages_cpp" />
+      <item itemvalue="Application.tf_generate_messages_eus" />
+      <item itemvalue="Application.tf_generate_messages_lisp" />
+      <item itemvalue="Application.tf_generate_messages_nodejs" />
+      <item itemvalue="Application.tf_generate_messages_py" />
+      <item itemvalue="Application._catkin_empty_exported_target" />
+      <item itemvalue="Application._franka_example_controllers_generate_messages_check_deps_JointTorqueComparison" />
+      <item itemvalue="Application.dynamic_reconfigure_gencfg" />
+      <item itemvalue="Application.dynamic_reconfigure_generate_messages_cpp" />
+      <item itemvalue="Application.dynamic_reconfigure_generate_messages_eus" />
+      <item itemvalue="Application.dynamic_reconfigure_generate_messages_lisp" />
+      <item itemvalue="Application.dynamic_reconfigure_generate_messages_nodejs" />
+      <item itemvalue="Application.dynamic_reconfigure_generate_messages_py" />
+      <item itemvalue="Application.franka_example_controllers" />
+      <item itemvalue="Application.franka_example_controllers_gencfg" />
+      <item itemvalue="Application.franka_example_controllers_gencpp" />
+      <item itemvalue="Application.franka_example_controllers_generate_messages" />
+      <item itemvalue="Application.franka_example_controllers_generate_messages_cpp" />
+      <item itemvalue="Application.franka_example_controllers_generate_messages_eus" />
+      <item itemvalue="Application.franka_example_controllers_generate_messages_lisp" />
+      <item itemvalue="Application.franka_example_controllers_generate_messages_nodejs" />
+      <item itemvalue="Application.franka_example_controllers_generate_messages_py" />
+      <item itemvalue="Application.franka_example_controllers_geneus" />
+      <item itemvalue="Application.franka_example_controllers_genlisp" />
+      <item itemvalue="Application.franka_example_controllers_gennodejs" />
+      <item itemvalue="Application.franka_example_controllers_genpy" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_GraspAction" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_GraspActionFeedback" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_GraspActionGoal" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_GraspActionResult" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_GraspEpsilon" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_GraspFeedback" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_GraspGoal" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_GraspResult" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_HomingAction" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_HomingActionFeedback" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_HomingActionGoal" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_HomingActionResult" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_HomingFeedback" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_HomingGoal" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_HomingResult" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_MoveAction" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_MoveActionFeedback" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_MoveActionGoal" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_MoveActionResult" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_MoveFeedback" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_MoveGoal" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_MoveResult" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_StopAction" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_StopActionFeedback" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_StopActionGoal" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_StopActionResult" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_StopFeedback" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_StopGoal" />
+      <item itemvalue="Application._franka_gripper_generate_messages_check_deps_StopResult" />
+      <item itemvalue="Application.actionlib_generate_messages_cpp" />
+      <item itemvalue="Application.actionlib_generate_messages_eus" />
+      <item itemvalue="Application.actionlib_generate_messages_lisp" />
+      <item itemvalue="Application.actionlib_generate_messages_nodejs" />
+      <item itemvalue="Application.actionlib_generate_messages_py" />
+      <item itemvalue="Application.actionlib_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.actionlib_msgs_generate_messages_eus" />
+      <item itemvalue="Application.actionlib_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.actionlib_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.actionlib_msgs_generate_messages_py" />
+      <item itemvalue="Application.control_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.control_msgs_generate_messages_eus" />
+      <item itemvalue="Application.control_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.control_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.control_msgs_generate_messages_py" />
+      <item itemvalue="Application.franka_gripper" />
+      <item itemvalue="Application.franka_gripper_gencpp" />
+      <item itemvalue="Application.franka_gripper_generate_messages" />
+      <item itemvalue="Application.franka_gripper_generate_messages_cpp" />
+      <item itemvalue="Application.franka_gripper_generate_messages_eus" />
+      <item itemvalue="Application.franka_gripper_generate_messages_lisp" />
+      <item itemvalue="Application.franka_gripper_generate_messages_nodejs" />
+      <item itemvalue="Application.franka_gripper_generate_messages_py" />
+      <item itemvalue="Application.franka_gripper_geneus" />
+      <item itemvalue="Application.franka_gripper_genlisp" />
+      <item itemvalue="Application.franka_gripper_gennodejs" />
+      <item itemvalue="Application.franka_gripper_genpy" />
+      <item itemvalue="Application.franka_gripper_node" />
+      <item itemvalue="Application.geometry_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.geometry_msgs_generate_messages_eus" />
+      <item itemvalue="Application.geometry_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.geometry_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.geometry_msgs_generate_messages_py" />
+      <item itemvalue="Application.roscpp_generate_messages_cpp" />
+      <item itemvalue="Application.roscpp_generate_messages_eus" />
+      <item itemvalue="Application.roscpp_generate_messages_lisp" />
+      <item itemvalue="Application.roscpp_generate_messages_nodejs" />
+      <item itemvalue="Application.roscpp_generate_messages_py" />
+      <item itemvalue="Application.rosgraph_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.rosgraph_msgs_generate_messages_eus" />
+      <item itemvalue="Application.rosgraph_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.rosgraph_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.rosgraph_msgs_generate_messages_py" />
+      <item itemvalue="Application.sensor_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.sensor_msgs_generate_messages_eus" />
+      <item itemvalue="Application.sensor_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.sensor_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.sensor_msgs_generate_messages_py" />
+      <item itemvalue="Application.trajectory_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.trajectory_msgs_generate_messages_eus" />
+      <item itemvalue="Application.trajectory_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.trajectory_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.trajectory_msgs_generate_messages_py" />
+      <item itemvalue="Application.franka_hw" />
+      <item itemvalue="Application._run_tests_franka_hw" />
+      <item itemvalue="Application._run_tests_franka_hw_rostest" />
+      <item itemvalue="Application._run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" />
+      <item itemvalue="Application.clean_test_results_franka_hw" />
+      <item itemvalue="Application.franka_hw_test" />
+      <item itemvalue="Application.run_tests_franka_hw" />
+      <item itemvalue="Application.run_tests_franka_hw_rostest" />
+      <item itemvalue="Application.run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" />
+      <item itemvalue="Application._franka_msgs_generate_messages_check_deps_Errors" />
+      <item itemvalue="Application._franka_msgs_generate_messages_check_deps_FrankaState" />
+      <item itemvalue="Application.franka_msgs_gencpp" />
+      <item itemvalue="Application.franka_msgs_generate_messages" />
+      <item itemvalue="Application.franka_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.franka_msgs_generate_messages_eus" />
+      <item itemvalue="Application.franka_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.franka_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.franka_msgs_generate_messages_py" />
+      <item itemvalue="Application.franka_msgs_geneus" />
+      <item itemvalue="Application.franka_msgs_genlisp" />
+      <item itemvalue="Application.franka_msgs_gennodejs" />
+      <item itemvalue="Application.franka_msgs_genpy" />
+      <item itemvalue="Application.std_msgs_generate_messages_cpp" />
+      <item itemvalue="Application.std_msgs_generate_messages_eus" />
+      <item itemvalue="Application.std_msgs_generate_messages_lisp" />
+      <item itemvalue="Application.std_msgs_generate_messages_nodejs" />
+      <item itemvalue="Application.std_msgs_generate_messages_py" />
+      <item itemvalue="Application.gripper_joint_state_publisher" />
+      <item itemvalue="Application.robot_joint_state_publisher" />
+      <item itemvalue="Application.cartesian_impedance_control" />
+      <item itemvalue="Application.echo_robot_state" />
+      <item itemvalue="Application.franka_controller_sub" />
+      <item itemvalue="Application.gmock" />
+      <item itemvalue="Application.gmock_main" />
+      <item itemvalue="Application.gtest" />
+      <item itemvalue="Application.gtest_main" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="176e56c0-f007-4a54-ba42-b6ddd0ed0afb" name="Default Changelist" comment="" />
+      <created>1549584515422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549584515422</updated>
+      <workItem from="1549584516679" duration="19000" />
+      <workItem from="1549584616431" duration="7457000" />
+      <workItem from="1549639272029" duration="1869000" />
+      <workItem from="1549645925878" duration="2265000" />
+      <workItem from="1549669607726" duration="5568000" />
+      <workItem from="1549681408361" duration="708000" />
+      <workItem from="1549994455821" duration="697000" />
+      <workItem from="1550321030430" duration="2008000" />
+      <workItem from="1550323131707" duration="4552000" />
+      <workItem from="1550397175754" duration="1446000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="26589000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1779989" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291536" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32810867" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.3291536" />
+      <window_info anchor="bottom" id="File Transfer" order="12" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.47753397" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31785518" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291536" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3291536" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.3291536" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.3291536" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.47753397" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="checking publish of transformation matrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="checking publish of transformation matrix" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file:///opt/ros/kinetic/share/catkin/cmake/catkin_package.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="301" selection-start-line="301" selection-end-line="301" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/generate_joint_position_motion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1060">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/libfranka/include/franka/control_types.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
+          <folding>
+            <element signature="e#132#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/libfranka/include/franka/robot.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="145" column="7" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/examples_common.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/grasp_object.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/joint_impedance_control.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/motion_with_control.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2430">
+          <caret line="162" column="30" selection-start-line="162" selection-start-column="30" selection-end-line="162" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/echo_robot_state.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/franka_ros/franka_example_controllers/include/franka_example_controllers/cartesian_velocity_example_controller.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/franka_ros/franka_example_controllers/src/cartesian_velocity_example_controller.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="88" column="24" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/franka_ros/franka_example_controllers/include/franka_example_controllers/cartesian_pose_example_controller.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/clionTest/main.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/std_msgs/Float64MultiArray.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="53" column="80" selection-start-line="53" selection-start-column="80" selection-end-line="53" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/franka_ros/franka_example_controllers/src/cartesian_pose_example_controller.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+          <folding>
+            <element signature="e#118#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/franka_ros/franka_example_controllers/src/model_example_controller.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="9" selection-start-line="16" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/array">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#266#286#0" expanded="true" />
+            <element signature="e#1199#1218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
