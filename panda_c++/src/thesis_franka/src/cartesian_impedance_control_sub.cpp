@@ -6,14 +6,15 @@
 #include <franka/model.h>
 #include <franka/robot.h>
 #include <franka/gripper.h>
-
+#include <franka/rate_limiting.h>
 #include <cmath>  // for isnan()
 #include <limits> // for quiet_NaN
 
 // for subscribers
 #include "ros/ros.h"
 #include "std_msgs/Float64MultiArray.h"
-
+#include "geometry_msgs/PoseStamped.h"
+#include "examples_common.h"
 #include <thread>
 
 using namespace std;
@@ -23,6 +24,7 @@ using namespace std;
 double target_x = std::numeric_limits<double>::quiet_NaN();
 double target_y = std::numeric_limits<double>::quiet_NaN();
 double target_z = std::numeric_limits<double>::quiet_NaN();
+double joint_6_val = std::numeric_limits<double>::quiet_NaN();
 double now_x = 0.0;
 double now_y = 0.0;
 double now_z = 0.0;
@@ -86,10 +88,9 @@ void graspCallback(const std_msgs::Float64MultiArray::ConstPtr& msg)
     target_gripper_speed = msg->data[1];
     target_gripper_force = msg->data[2];
 
-    gripper->homing();
-    sleep(3);
+//    gripper->homing();
     // bool moved = gripper->move(target_gripper_width, target_gripper_speed);  //  , target_gripper_force
-    bool grasped = gripper->grasp(target_gripper_width, target_gripper_speed, target_gripper_force);  //
+    bool grasped = gripper->grasp(target_gripper_width, target_gripper_speed, 10, 0.1, 0.1);  //
     cout << "grasped " << grasped << endl;
 
     // new target coordinates and speed now from within the control loop
@@ -98,22 +99,10 @@ void graspCallback(const std_msgs::Float64MultiArray::ConstPtr& msg)
     // only if the wanted speed is below the speed limit is the speed adjusted
 }
 
-void moveCallback(const std_msgs::Float64MultiArray::ConstPtr& msg)
+void gripperOrientCallback(const geometry_msgs::PoseStamped &msg)
 {
-    ROS_INFO("Gripper callback received: width, speed, force: [%lf, %lf, %lf]", msg->data[0], msg->data[1], msg->data[2]);  //
-    target_gripper_width = msg->data[0];
-    target_gripper_speed = msg->data[1];
-    // nove force here
-
-    // bool moved = gripper->move(target_gripper_width, target_gripper_speed);  //  , target_gripper_force
-    gripper->homing();
-    sleep(3);
-    bool moved = false;  //
-
-    while(!moved){
-        moved = gripper->move(target_gripper_width, target_gripper_speed);  //
-        cout << "moving " << moved << endl;
-    }
+    joint_6_val = msg.pose.orientation.z;
+//    std::cout << joint_6_val << std::endl;
 }
 
 
@@ -123,7 +112,7 @@ void subscribe_target_motion() {
     ros::NodeHandle node_handle;
     ros::Subscriber sub_motion = node_handle.subscribe("franka_move_to", 1, motionCallback);  // 1: buffer size of message queue
     ros::Subscriber sub_grasp = node_handle.subscribe("franka_gripper_grasp", 1, graspCallback);
-    ros::Subscriber sub_move = node_handle.subscribe("franka_gripper_move", 1, moveCallback);
+    ros::Subscriber sub_move = node_handle.subscribe("reply_gripping_point", 1, gripperOrientCallback);
     std_msgs::Float64MultiArray states;
     states.data.resize(16);
     ros::Publisher publisher = node_handle.advertise<std_msgs::Float64MultiArray>("franka_current_position", 1);
@@ -151,8 +140,18 @@ int main(int argc, char** argv) {
 
         franka::Robot robot(argv[1]);
         gripper = new franka::Gripper(argv[1]);
+        sleep(2);
         gripper->homing();
-        sleep(5);
+
+        std::array<double, 7> q_goal = {{-1.5712350861180224, -0.3851329734534546, -0.00014185679283834537,
+                                         -2.0, 0.00032089026875069563, 1.570605999765736, 0.7848645688907966}};
+        MotionGenerator motion_generator(0.5, q_goal);
+        std::cout << "WARNING: This example will move the robot! "
+                  << "Please make sure to have the user stop button at hand!" << std::endl
+                  << "Press Enter to continue..." << std::endl;
+        std::cin.ignore();
+        robot.control(motion_generator);
+        std::cout << "Finished moving to initial joint configuration." << std::endl;
 
         // Set the collision behavior.
         std::array<double, 7> lower_torque_thresholds_nominal{
@@ -172,7 +171,7 @@ int main(int argc, char** argv) {
                 lower_torque_thresholds_nominal, upper_torque_thresholds_nominal,
                 lower_force_thresholds_acceleration, upper_force_thresholds_acceleration,
                 lower_force_thresholds_nominal, upper_force_thresholds_nominal);
-
+        franka::Model model = robot.loadModel();
         double time = 0.0;
 
         auto initial_pose = robot.readOnce().O_T_EE_d;
@@ -182,7 +181,16 @@ int main(int argc, char** argv) {
 
         std::thread t1(subscribe_target_motion);
 
-        robot.control([=, &time](const franka::RobotState& robot_state,
+        while(isnan(joint_6_val)){
+            sleep(1);
+        }
+        sleep(5);
+        q_goal = {{-1.5712350861180224, -0.3851329734534546, -0.00014185679283834537,
+                          -2.0, 0.00032089026875069563, 1.570605999765736, 0.7848645688907966-joint_6_val}};
+        MotionGenerator motion_generator1(0.5, q_goal);
+        robot.control(motion_generator1);
+
+        auto cartesian_velocity_callback = [=, &time](const franka::RobotState& robot_state,
                                  franka::Duration time_step) -> franka::CartesianVelocities {
             double vel_x = 0.0;
             double vel_y = 0.0;
@@ -191,7 +199,7 @@ int main(int argc, char** argv) {
             static double old_vel_x = 0.0;
             static double old_vel_y = 0.0;
             static double old_vel_z = 0.0;
-            std::cout << "old vel_x: " << old_vel_x << std::endl;
+
             time += time_step.toSec();
 
             auto state_pose = robot_state.O_T_EE_d;
@@ -210,7 +218,7 @@ int main(int argc, char** argv) {
             double vec_x = target_x - cur_x;
             double vec_y = target_y - cur_y;
             double vec_z = target_z - cur_z;
-            std::cout << target_x << std::endl;
+
             double l2_norm = sqrt(vec_x*vec_x + vec_y*vec_y + vec_z*vec_z);
 
             if (l2_norm < 0.02) {
@@ -236,7 +244,42 @@ int main(int argc, char** argv) {
 
             double vel_norm = sqrt(vel_x*vel_x + vel_y*vel_y + vel_z*vel_z);
             return output;
-        });
+        };
+        // Set gains for the joint impedance control.
+        // Stiffness
+        const std::array<double, 7> k_gains = {{60.0, 60.0, 60.0, 60.0, 25.0, 150.0, 5.0}};
+        // Damping
+        const std::array<double, 7> d_gains = {{50.0, 50.0, 50.0, 50.0, 30.0, 25.0, 15.0}};
+
+        std::function<franka::Torques(const franka::RobotState&, franka::Duration)>
+                impedance_control_callback =
+                [&model, k_gains, d_gains](
+                        const franka::RobotState& state, franka::Duration /*period*/) -> franka::Torques {
+                    // Read current coriolis terms from model.
+                    std::array<double, 7> coriolis = model.coriolis(state);
+
+                    // Compute torque command from joint impedance control law.
+                    // Note: The answer to our Cartesian pose inverse kinematics is always in state.q_d with one
+                    // time step delay.
+                    std::array<double, 7> tau_d_calculated;
+                    for (size_t i = 0; i < 7; i++) {
+                        tau_d_calculated[i] =
+                                k_gains[i] * (state.q_d[i] - state.q[i]) - d_gains[i] * state.dq[i] + coriolis[i];
+                    }
+
+                    // The following line is only necessary for printing the rate limited torque. As we activated
+                    // rate limiting for the control loop (activated by default), the torque would anyway be
+                    // adjusted!
+                    std::array<double, 7> tau_d_rate_limited =
+                            franka::limitRate(franka::kMaxTorqueRate, tau_d_calculated, state.tau_J_d);
+
+                    // Send torque command.
+                    return tau_d_rate_limited;
+                };
+        robot.control(impedance_control_callback, cartesian_velocity_callback);
+        if(t1.joinable()){
+            t1.join();
+        }
     } catch (const franka::Exception& e) {
         std::cout << e.what() << std::endl;
         return -1;

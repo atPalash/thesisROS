@@ -307,15 +307,15 @@ class MotionPlanner:
 
 
 if __name__ == '__main__':
-    from franka.franka_control_ros import FrankaRos
+    # from franka.franka_control_ros import FrankaRos
 
-    arm = FrankaRos(init_ros_node=True)  # create an arm object for testing motion generation
+    # arm = FrankaRos(init_ros_node=True)  # create an arm object for testing motion generation
     # print(arm.x, arm.y, arm.z)
 
     planner = MotionPlanner(visual=False, debug=True)
     #
     # EXAMPLE MOTION TO TEST IF PARTS ARE WORKING
-    example_path = np.array([[arm.x, arm.y, arm.z], [-6.86302224617e-05, -0.306911210212, 0.589742275634]])  # move +y
+    example_path = np.array([[0,1, 0.2, 0,6], [-6.86302224617e-05, -0.306911210212, 0.589742275634]])  # move +y
     motion_plan = planner.apply_trapezoid_vel(example_path)
     print(motion_plan)
     arm.send_trajectory(motion_plan)

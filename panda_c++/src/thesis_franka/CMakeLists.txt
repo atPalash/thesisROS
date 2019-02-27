@@ -31,18 +31,18 @@ catkin_package(
  )
 
 add_executable(franka_controller_sub src/franka_controller_sub.cpp)
-add_executable(cartesian_impedance_control src/cartesian_impedance_control.cpp src/examples_common.cpp)
-add_executable(echo_robot_state src/echo_robot_state.cpp src/examples_common.cpp)
+add_executable(cartesian_impedance_control_sub src/cartesian_impedance_control_sub.cpp src/examples_common.cpp)
+add_executable(joint_impedance_control src/joint_impedance_control.cpp src/examples_common.cpp)
 
 target_link_libraries(franka_controller_sub PUBLIC
   ${Franka_LIBRARIES}
   ${catkin_LIBRARIES}
 )
-target_link_libraries(cartesian_impedance_control PUBLIC
+target_link_libraries(cartesian_impedance_control_sub PUBLIC
   ${Franka_LIBRARIES}
   ${catkin_LIBRARIES}
 )
-target_link_libraries(echo_robot_state PUBLIC
+target_link_libraries(joint_impedance_control PUBLIC
   ${Franka_LIBRARIES}
   ${catkin_LIBRARIES}
 )
@@ -53,12 +53,12 @@ target_include_directories(franka_controller_sub SYSTEM PUBLIC
   ${catkin_INCLUDE_DIRS}
 )
 
-target_include_directories(cartesian_impedance_control SYSTEM PUBLIC
+target_include_directories(cartesian_impedance_control_sub SYSTEM PUBLIC
   ${Franka_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
 )
-target_include_directories(echo_robot_state SYSTEM PUBLIC
+target_include_directories(joint_impedance_control SYSTEM PUBLIC
   ${Franka_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}

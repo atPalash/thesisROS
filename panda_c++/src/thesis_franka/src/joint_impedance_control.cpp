@@ -48,7 +48,7 @@ int main(int argc, char** argv) {
   const double radius = 0.05;
   const double vel_max = 0.25;
   const double acceleration_time = 2.0;
-  const double run_time = 20.0;
+  const double run_time = 200.0;
   // Set print rate for comparing commanded vs. measured torques.
   const double print_rate = 10.0;
 
@@ -173,9 +173,9 @@ int main(int argc, char** argv) {
 
     // Set gains for the joint impedance control.
     // Stiffness
-    const std::array<double, 7> k_gains = {{600.0, 600.0, 600.0, 600.0, 250.0, 150.0, 50.0}};
+    const std::array<double, 7> k_gains = {{6.0, 6.0, 6.0, 6.0, 2.0, 1.0, 1.0}};
     // Damping
-    const std::array<double, 7> d_gains = {{50.0, 50.0, 50.0, 50.0, 30.0, 25.0, 15.0}};
+    const std::array<double, 7> d_gains = {{5.0, 5.0, 5.0, 5.0, 3.0, 2.0, 1.0}};
 
     // Define callback for the joint torque control loop.
     std::function<franka::Torques(const franka::RobotState&, franka::Duration)>

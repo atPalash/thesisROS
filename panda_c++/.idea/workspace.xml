@@ -15,6 +15,7 @@
       <config projectName="Project" targetName="geometry_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="franka_msgs_genpy" />
       <config projectName="Project" targetName="franka_control_genlisp" />
+      <config projectName="Project" targetName="cartesian_impedance_control_sub" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="franka_msgs_genlisp" />
       <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetFullCollisionBehavior" />
@@ -23,6 +24,7 @@
       <config projectName="Project" targetName="geometry_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="Project" targetName="franka_example_controllers_genlisp" />
+      <config projectName="Project" targetName="joint_impedance_control" />
       <config projectName="Project" targetName="robot_joint_state_publisher" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionFeedback" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveResult" />
@@ -41,7 +43,6 @@
       <config projectName="Project" targetName="controller_manager_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="_catkin_empty_exported_target" />
       <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionResult" />
-      <config projectName="Project" targetName="cartesian_impedance_control" />
       <config projectName="Project" targetName="tf2_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="actionlib_generate_messages_py" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_nodejs" />
@@ -101,7 +102,6 @@
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopResult" />
       <config projectName="Project" targetName="tf_generate_messages_eus" />
       <config projectName="Project" targetName="franka_hw" />
-      <config projectName="Project" targetName="echo_robot_state" />
       <config projectName="Project" targetName="_run_tests_franka_hw" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspAction" />
       <config projectName="Project" targetName="sensor_msgs_generate_messages_nodejs" />
@@ -212,22 +212,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="176e56c0-f007-4a54-ba42-b6ddd0ed0afb" name="Default Changelist" comment="checking publish of transformation matrix">
-      <change beforePath="$PROJECT_DIR$/src/franka_ros" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_control/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_control/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_control/src/franka_state_controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_control/src/franka_state_controller.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_description/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_description/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_example_controllers/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_example_controllers/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_example_controllers/src/cartesian_pose_example_controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_example_controllers/src/cartesian_pose_example_controller.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_gripper/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_gripper/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_hw/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_hw/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_hw/src/franka_hw.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_hw/src/franka_hw.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_msgs/msg/FrankaState.msg" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_msgs/msg/FrankaState.msg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_msgs/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_msgs/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_ros/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_ros/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_visualization/launch/franka_visualization.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_visualization/launch/franka_visualization.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/franka_ros/franka_visualization/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/franka_ros/franka_visualization/package.xml" afterDir="false" />
+    <list default="true" id="176e56c0-f007-4a54-ba42-b6ddd0ed0afb" name="Default Changelist" comment="check for improvement in robot controller grasp done">
+      <change afterPath="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_sub.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/thesisROS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/thesisROS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/joint_impedance_control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/joint_impedance_control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../panda_python/src/motion_planner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../panda_python/src/motion_planner.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -238,28 +233,73 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="204" column="94" selection-start-line="204" selection-start-column="94" selection-end-line="204" selection-end-column="94" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-                <element signature="e#266#286#0" expanded="true" />
-                <element signature="e#1199#1218#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_sub.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="397">
+                  <caret line="127" column="5" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#0#16#0" expanded="true" />
+                    <element signature="e#299#319#0" expanded="true" />
+                    <element signature="e#1362#1381#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../panda_python/src/motion_planner.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#23#60#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#118#134#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file:///usr/include/eigen3/Eigen/src/Geometry/Transform.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="10395">
+                  <caret line="693" column="35" selection-start-line="693" selection-start-column="35" selection-end-line="693" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>target_x</find>
       <find>def</find>
       <find>current_pose</find>
+      <find>vel_current</find>
+      <find>print_thread</find>
+      <find>t1</find>
+      <find>old_vel_x</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -269,18 +309,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/thesis_franka/src/motion_with_control.cpp" />
         <option value="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp" />
         <option value="$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp" />
+        <option value="$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_sub.cpp" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="x" value="-10" />
+    <option name="y" value="45" />
+    <option name="width" value="1391" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -330,10 +372,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/clionTest/main.cpp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/thesis_franka/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -347,7 +394,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.franka_control_node">
+  <component name="RunManager" selected="Application.cartesian_impedance_control_sub">
     <configuration name="_catkin_empty_exported_target" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="_catkin_empty_exported_target" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -648,7 +695,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cartesian_impedance_control" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="cartesian_impedance_control" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="cartesian_impedance_control">
+    <configuration name="cartesian_impedance_control_sub" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="172.16.0.2" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="cartesian_impedance_control_sub" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="cartesian_impedance_control_sub">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -749,11 +796,6 @@
       </method>
     </configuration>
     <configuration name="dynamic_reconfigure_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="dynamic_reconfigure_generate_messages_py" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="echo_robot_state" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="echo_robot_state" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="echo_robot_state">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -1074,6 +1116,11 @@
       </method>
     </configuration>
     <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="joint_impedance_control" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="joint_impedance_control" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="joint_impedance_control">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -1464,9 +1511,9 @@
       <item itemvalue="Application.std_msgs_generate_messages_py" />
       <item itemvalue="Application.gripper_joint_state_publisher" />
       <item itemvalue="Application.robot_joint_state_publisher" />
-      <item itemvalue="Application.cartesian_impedance_control" />
-      <item itemvalue="Application.echo_robot_state" />
+      <item itemvalue="Application.cartesian_impedance_control_sub" />
       <item itemvalue="Application.franka_controller_sub" />
+      <item itemvalue="Application.joint_impedance_control" />
       <item itemvalue="Application.gmock" />
       <item itemvalue="Application.gmock_main" />
       <item itemvalue="Application.gtest" />
@@ -1494,22 +1541,27 @@
       <workItem from="1550323131707" duration="4552000" />
       <workItem from="1550397175754" duration="1446000" />
       <workItem from="1550399569577" duration="2227000" />
+      <workItem from="1550686135551" duration="9000" />
+      <workItem from="1551179885871" duration="970000" />
+      <workItem from="1551181465696" duration="7504000" />
+      <workItem from="1551192089627" duration="14145000" />
+      <workItem from="1551241709254" duration="271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28816000" />
+    <option name="totallyTimeSpent" value="51715000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18021005" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19624102" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32877752" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1518,9 +1570,9 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291536" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32810867" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.3291536" />
-      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.3291536" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.47753397" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32877752" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.32810867" />
+      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.47648904" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1595,25 +1647,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="checking publish of transformation matrix" />
-    <option name="LAST_COMMIT_MESSAGE" value="checking publish of transformation matrix" />
+    <MESSAGE value="check for improvement in robot controller grasp done" />
+    <option name="LAST_COMMIT_MESSAGE" value="check for improvement in robot controller grasp done" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///opt/ros/kinetic/share/catkin/cmake/catkin_package.cmake">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="301" selection-start-line="301" selection-end-line="301" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/generate_joint_position_motion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1060">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1627,42 +1668,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/libfranka/include/franka/robot.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="145" column="7" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/examples_common.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/grasp_object.cpp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/joint_impedance_control.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/motion_with_control.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="162" column="30" selection-start-line="162" selection-start-column="30" selection-end-line="162" selection-end-column="30" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/echo_robot_state.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1702,13 +1709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/franka_ros/franka_example_controllers/src/cartesian_pose_example_controller.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -1733,14 +1733,151 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/examples_common.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2128">
+          <caret line="120" column="34" selection-start-line="120" selection-start-column="34" selection-end-line="120" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/joint_point_to_point_motion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/generate_joint_position_motion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177" />
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/kinetic/include/ros/node_handle.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="238" column="6" lean-forward="true" selection-start-line="238" selection-start-column="6" selection-end-line="238" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/libfranka/include/franka/robot.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3825">
+          <caret line="255" column="7" selection-start-line="255" selection-start-column="7" selection-end-line="255" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/print_joint_poses.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-383" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="204" column="94" selection-start-line="204" selection-start-column="94" selection-end-line="204" selection-end-column="94" />
+        <state relative-caret-position="401">
+          <caret line="195" lean-forward="true" selection-start-line="195" selection-end-line="195" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
             <element signature="e#266#286#0" expanded="true" />
             <element signature="e#1199#1218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/force_control.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/motion_with_control.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="162" column="30" selection-start-line="162" selection-start-column="30" selection-end-line="162" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/libfranka/include/franka/rate_limiting.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/examples_common.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/joint_impedance_control.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2985">
+          <caret line="199" column="48" lean-forward="true" selection-start-line="199" selection-start-column="48" selection-end-line="199" selection-end-column="48" />
+          <folding>
+            <element signature="e#118#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+          <folding>
+            <element signature="e#118#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/eigen3/Eigen/src/Geometry/Transform.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10395">
+          <caret line="693" column="35" selection-start-line="693" selection-start-column="35" selection-end-line="693" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_sub.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="127" column="5" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#299#319#0" expanded="true" />
+            <element signature="e#1362#1381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../panda_python/src/motion_planner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="e#23#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
