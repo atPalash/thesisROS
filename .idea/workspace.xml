@@ -10,13 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb53225f-aad6-4fd5-afca-f43c33999f10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/thesisROS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/thesisROS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda_c++/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/panda_c++/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panda_c++/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/panda_c++/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda_c++/src/thesis_franka/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/panda_c++/src/thesis_franka/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panda_python/src/motion_planner.py" beforeDir="false" afterPath="$PROJECT_DIR$/panda_python/src/motion_planner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panda_python/src/franka/franka_control_ros.py" beforeDir="false" afterPath="$PROJECT_DIR$/panda_python/src/franka/franka_control_ros.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,15 +21,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/thesisROS$motion_planner.coverage" NAME="motion_planner Coverage Results" MODIFIED="1551187810441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/panda_python/src" />
+    <SUITE FILE_PATH="coverage/thesisROS$motion_planner.coverage" NAME="motion_planner Coverage Results" MODIFIED="1551281151604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/panda_python/src" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/panda_python/src/robot_node_ROS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="449">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#22#40#0" expanded="true" />
               </folding>
@@ -42,10 +38,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/panda_python/src/motion_planner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <folding>
+                <element signature="e#23#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/panda_python/src/franka/franka_control_ros.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+            <state relative-caret-position="-520">
+              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
               <folding>
                 <element signature="e#276#313#0" expanded="true" />
               </folding>
@@ -76,16 +84,16 @@
         <option value="$PROJECT_DIR$/panda_python/src/movegroupRobot.py" />
         <option value="$PROJECT_DIR$/panda_python/src/franka_motion_pub.py" />
         <option value="$PROJECT_DIR$/panda_python/src/robot_node_ROS.py" />
-        <option value="$PROJECT_DIR$/panda_python/src/franka/franka_control_ros.py" />
         <option value="$PROJECT_DIR$/panda_python/src/motion_planner.py" />
+        <option value="$PROJECT_DIR$/panda_python/src/franka/franka_control_ros.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="992" />
-    <option name="y" value="-4" />
-    <option name="width" value="928" />
-    <option name="height" value="1056" />
+    <option name="x" value="64" />
+    <option name="y" value="-11" />
+    <option name="width" value="1857" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -200,6 +208,8 @@
       <workItem from="1549833771458" duration="1257000" />
       <workItem from="1551187591765" duration="832000" />
       <workItem from="1551202920074" duration="616000" />
+      <workItem from="1551278002176" duration="2880000" />
+      <workItem from="1551308164188" duration="875000" />
     </task>
     <task id="LOCAL-00001" summary="creating image dataset">
       <created>1549126546296</created>
@@ -219,19 +229,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21194000" />
+    <option name="totallyTimeSpent" value="24949000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08512991" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14538419" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29005316" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28944618" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -271,6 +281,11 @@
           <line>319</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/panda_python/src/motion_planner.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -298,17 +313,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/panda_python/src/test_SUB_PUB.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/panda_python/src/motion_planner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="418">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="e#23#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/panda_python/src/robot_node_ROS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="449">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#22#40#0" expanded="true" />
           </folding>
@@ -317,16 +338,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/panda_python/src/franka/franka_control_ros.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        <state relative-caret-position="-520">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding>
             <element signature="e#276#313#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/panda_python/src/test_SUB_PUB.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

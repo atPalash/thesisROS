@@ -23,7 +23,7 @@ class FrankaRos:
         structures needed to encode the commands being sent via our ROS topics.
 
         It also initialises a rospy node and three publishers for:
-        * moving the end effector to a 3D point with a certain speed
+        * moving the end effector to a 3-D point with a certain speed
         * moving the grippers to grasp an object of a certain size with a force and speed
         * moving the grippers to a certain width with a speed
         """
