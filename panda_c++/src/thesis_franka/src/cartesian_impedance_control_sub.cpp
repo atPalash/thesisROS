@@ -143,8 +143,8 @@ int main(int argc, char** argv) {
         sleep(2);
         gripper->homing();
 
-        std::array<double, 7> q_goal = {{-1.5712350861180224, -0.3851329734534546, -0.00014185679283834537,
-                                         -2.0, 0.00032089026875069563, 1.570605999765736, 0.7848645688907966}};
+        std::array<double, 7> q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
+                                                -0.6899356769762541,-0.0006083739476036627, 0.9990197826387897, 0.7855223296198005}};
         MotionGenerator motion_generator(0.5, q_goal);
         std::cout << "WARNING: This example will move the robot! "
                   << "Please make sure to have the user stop button at hand!" << std::endl
@@ -185,8 +185,8 @@ int main(int argc, char** argv) {
             sleep(1);
         }
         sleep(5);
-        q_goal = {{-1.5712350861180224, -0.3851329734534546, -0.00014185679283834537,
-                          -2.0, 0.00032089026875069563, 1.570605999765736, 0.7848645688907966-joint_6_val}};
+        q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
+                          -0.6899356769762541,-0.0006083739476036627, 0.9990197826387897, 0.7855223296198005-joint_6_val}};
         MotionGenerator motion_generator1(0.5, q_goal);
         robot.control(motion_generator1);
 
