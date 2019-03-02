@@ -144,9 +144,10 @@ void generateMotionPlan(){
     MotionPlanner pathPlanner = MotionPlanner(0.005);
     cout << start_x << " " << start_y << " " << start_z << endl;
     cout << goal_x << " " << goal_y << " " << goal_z << endl;
-    vector<vector<double>> path = {{start_x, start_y, start_z}, {goal_x, goal_y, goal_z}};
+    vector<vector<double>> path = {{start_x, start_y, start_z}, {goal_x, goal_y, start_z-0.3}, {goal_x, goal_y, goal_z}};
     auto motion_plan = pathPlanner.applyTrapezoidalVelocity(path);
-    cout << "motion plan received" << endl;
+    cout << "motion plan received " << motion_plan[motion_plan.size() - 1][0] << ", " <<
+    motion_plan[motion_plan.size() - 1][1] << ", "  << motion_plan[motion_plan.size() - 1][2] << " " << endl;
     plan_available = true;
     for(auto traj: motion_plan){
         target_x = traj[0];
@@ -155,7 +156,7 @@ void generateMotionPlan(){
         speed = traj[3];
         usleep(5000);
     }
-
+    sleep(1);
     grasp = true;
 
     path = {{goal_x, goal_y, goal_z}, {goal_x, goal_y, 0.3}};
@@ -186,7 +187,7 @@ int main(int argc, char** argv) {
 
         std::array<double, 7> q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
                                                 -0.6899356769762541,-0.0006083739476036627, 0.9990197826387897, 0.7855223296198005}};
-        MotionGenerator motion_generator(0.5, q_goal);
+        MotionGenerator motion_generator(0.2, q_goal);
         std::cout << "WARNING: This example will move the robot! "
                   << "Please make sure to have the user stop button at hand!" << std::endl
                   << "Press Enter to continue..." << std::endl;
@@ -228,10 +229,10 @@ int main(int argc, char** argv) {
         while(isnan(joint_6_val) || isnan(goal_x)){
             sleep(1);
         }
-
+        cout << "joint_6_val " << joint_6_val << endl;
         q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
                           -0.6899356769762541,-0.0006083739476036627, 0.9990197826387897, 0.7855223296198005-joint_6_val}};
-        MotionGenerator motion_generator1(0.5, q_goal);
+        MotionGenerator motion_generator1(0.2, q_goal);
         robot.control(motion_generator1);
         sleep(2);
 
@@ -298,7 +299,7 @@ int main(int argc, char** argv) {
         };
         // Set gains for the joint impedance control.
         // Stiffness
-        const std::array<double, 7> k_gains = {{60.0, 60.0, 60.0, 60.0, 25.0, 150.0, 5.0}};
+        const std::array<double, 7> k_gains = {{60.0, 60.0, 60.0, 60.0, 60.0, 30.0, 20.0}};
         // Damping
         const std::array<double, 7> d_gains = {{50.0, 50.0, 50.0, 50.0, 30.0, 25.0, 15.0}};
 
