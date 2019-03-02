@@ -79,6 +79,7 @@ std::vector<std::vector<double>> MotionPlanner::discretisePath(std::vector<std::
         } else{
             move_discrete.assign(current_segment.begin(), current_segment.end());
         }
+//        std::cout << move_discrete[move_discrete.size()-1][0] << " "<< move_discrete[move_discrete.size()-1][1] << " " <<move_discrete[move_discrete.size()-1][2] << std::endl;
     }
     return move_discrete;
 }
