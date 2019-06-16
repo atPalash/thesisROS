@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(my_franka)
+project(thesis_franka)
 
 set(CMAKE_BUILD_TYPE Release)
 
@@ -8,15 +8,27 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(catkin REQUIRED COMPONENTS
   franka_hw
-  geometry_msgs
   franka_msgs
   hardware_interface
   roscpp
   rospy
+  geometry_msgs
+  message_generation
 )
 
 find_package(Eigen3 REQUIRED)
 find_package(Franka 0.5.0 REQUIRED)
+
+add_service_files(
+  FILES
+  GripperData.srv
+)
+
+generate_messages(
+   DEPENDENCIES
+   std_msgs
+   geometry_msgs
+)
 
 catkin_package(
   INCLUDE_DIRS include
@@ -27,8 +39,14 @@ catkin_package(
     franka_msgs
     hardware_interface
     roscpp
+    message_runtime
   DEPENDS Franka
  )
+
+include_directories(
+        # include
+        ${catkin_INCLUDE_DIRS}
+)
 
 add_executable(cartesian_impedance_control_motionPlanner src/cartesian_impedance_control_motionPlanner.cpp src/examples_common.cpp src/MotionPlanner.cpp)
 add_executable(cartesian_impedance_control_sub src/cartesian_impedance_control_sub.cpp src/examples_common.cpp)

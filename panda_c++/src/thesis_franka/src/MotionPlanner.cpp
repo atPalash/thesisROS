@@ -127,7 +127,7 @@ std::vector<std::vector<double>> MotionPlanner::applyTrapezoidalVelocity(std::ve
     double total_time = end_stage_t*2 + mid_stage_t;
     double t1 = 0.0;
     std::vector<double> time_list = linspace(t1, total_time, total_time/dt);
-    std::cout << time_list.size() << std::endl;
+//    std::cout << time_list.size() << std::endl;
     std::vector<double> speed_values;
     speed_values.resize(time_list.size());
     double c = acc*time_list[time_list.size() - 1];
