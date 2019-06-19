@@ -81,9 +81,8 @@ bool graspCallback(vector<float> msg)
     return grasped;
 }
 
-// subscriber for absolute coordinates and speed
-void subscribe_target_motion() {
-
+// publish position of the robot, currently not used as a parameter for robot control
+void publish_current_position() {
     ros::NodeHandle node_handle;
     std_msgs::Float64MultiArray states;
     states.data.resize(16);
@@ -100,24 +99,39 @@ void subscribe_target_motion() {
     }
 }
 
-
+// call to motion plan generator and send response when the motion is completed, this function is called on receiving
+// a request from the vision side to start robot motion
 bool generateMotionPlan(thesis_franka::GripperData::Request  &req,
                         thesis_franka::GripperData::Response &res){
+    // new motion request received set plan available to false
+    plan_available = false;
+
+    // create new motion planner
     MotionPlanner pathPlanner = MotionPlanner(0.005);
     ROS_INFO_STREAM("star_pos: " << start_x << " " << start_y << " " << start_z);
     ROS_INFO_STREAM("goal pos: " << req.goal.pose.position.x << " " << req.goal.pose.position.y << " " << req.goal.pose.position.z);
 
+    // get goal in cartesian coordinate from  the request message
     goal_x = req.goal.pose.position.x;
     goal_y = req.goal.pose.position.y;
     goal_z = req.goal.pose.position.z;
     joint_6_val = req.goal.pose.orientation.z;
+
+    // first go from start to 3 cm (along Z) above the goal and then proceed vertically
     vector<vector<double>> path = {{start_x, start_y, start_z}, {goal_x, goal_y,goal_z-0.3}, {goal_x,goal_y,goal_z}};
 
+    // apply trapezoidal motion plan ie, accelerate in the beginning, constant speed at middle and decelerate towards the
+    // end of motion
     auto motion_plan = pathPlanner.applyTrapezoidalVelocity(path);
 
     ROS_INFO_STREAM("motion plan received ");
+
+    // set global variable to be detected in the main loop to start giving robot commands
     plan_available = true;
     sleep(2);
+
+    // set target positions as defined by the motion plan, wait till robot reaches the position and then set next position
+    // target locations are set as global variables which are used in the main loop
     for(auto traj: motion_plan){
         target_x = traj[0];
         target_y = traj[1];
@@ -133,27 +147,39 @@ bool generateMotionPlan(thesis_franka::GripperData::Request  &req,
 
 
 int main(int argc, char** argv) {
+    // initialising ros intrinsics
     ros::init(argc, argv, "listener");
     ros::NodeHandle n;
+
+    // checking if the robot hostname is provided by the user
     if (argc != 2) {
         ROS_ERROR_STREAM("Usage: ./franka_gripper_control <robot-hostname>");
         return -1;
     }
     try {
+        // create robot and gripper objects
         franka::Robot robot(argv[1]);
         gripper = new franka::Gripper(argv[1]);
-        sleep(2);
-        gripper->homing();
 
+        // perform homing action for gripper
+        gripper->homing();
+        sleep(2);
+
+        //robot_server service for receiving request from clients to initiate robot motion
         ros::ServiceServer service = n.advertiseService("robot_server", generateMotionPlan);
+
+        // ready joint values for initial position
         std::array<double, 7> q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
                                                 -0.6899356769762541,-0.0006083739476036627, 0.9990197826387897, 0.7855223296198005}};
+
+        // create motion plan to reach initial position
         MotionGenerator motion_generator(0.2, q_goal);
-        ROS_WARN_STREAM("WARNING: This example will move the robot! "
-                  << "Please make sure to have the user stop button at hand!");
+        ROS_WARN_STREAM("WARNING: This example will move the robot! ,please make sure to have the user stop button at hand!");
         ROS_INFO_STREAM("Finished moving to initial joint configuration.");
-        ROS_INFO_STREAM("Press Enter to continue...");
+        ROS_INFO_STREAM("Press any key to continue...");
         std::cin.ignore();
+
+        // send command to robot with the motion_generator object
         robot.control(motion_generator);
 
         // Set the collision behavior.
@@ -177,21 +203,25 @@ int main(int argc, char** argv) {
         franka::Model model = robot.loadModel();
         double time = 0.0;
 
+        // get initial position in cartesian
         auto initial_pose = robot.readOnce().O_T_EE_d;
         start_x = initial_pose[12];
         start_y = initial_pose[13];
         start_z = initial_pose[14];
         current_pose_ = initial_pose;
 
-        // call the subscription thread
-        std::thread t1(subscribe_target_motion);
+        // initiate separate thread to publish robot current position, the entire transformation matrix wrt robot base
+        // frame is published
+        std::thread t1(publish_current_position);
 
         ROS_INFO("Waiting for GOAL");
 
+        // wait till new plan is available
         while(isnan(joint_6_val) || isnan(goal_x)){
             sleep(1);
         }
 
+        // first align the gripper with the object to grip and then begin the motion
         ROS_INFO_STREAM("Aligning gripper with object");
         q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
                           -0.6899356769762541,-0.0006083739476036627, 0.9990197826387897, 0.7855223296198005-joint_6_val}};
@@ -286,7 +316,10 @@ int main(int argc, char** argv) {
                     // Send torque command.
                     return tau_d_rate_limited;
                 };
+        // check if a infinite while with keyboard exception can make it to reach the next position
         robot.control(impedance_control_callback, cartesian_velocity_callback);
+
+        // check for threads to stop
         if(t1.joinable()){
             t1.join();
         }
