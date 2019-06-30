@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Project" targetName="roscpp_generate_messages_py" />
       <config projectName="Project" targetName="thesis_franka_generate_messages_nodejs" />
+      <config projectName="Project" targetName="roscpp_generate_messages_py" />
       <config projectName="Project" targetName="franka_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="clean_test_results" />
       <config projectName="Project" targetName="franka_msgs_generate_messages_py" />
@@ -11,26 +11,26 @@
       <config projectName="Project" targetName="franka_msgs_genpy" />
       <config projectName="Project" targetName="franka_control_genlisp" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetFullCollisionBehavior" />
       <config projectName="Project" targetName="thesis_franka_genpy" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetFullCollisionBehavior" />
       <config projectName="Project" targetName="franka_example_controllers_generate_messages_py" />
-      <config projectName="Project" targetName="franka_control_genpy" />
       <config projectName="Project" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_control_genpy" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionFeedback" />
-      <config projectName="Project" targetName="dynamic_reconfigure_gencfg" />
       <config projectName="Project" targetName="franka_gripper_generate_messages" />
+      <config projectName="Project" targetName="dynamic_reconfigure_gencfg" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveAction" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="_run_tests_franka_hw_rostest" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionResult" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="_catkin_empty_exported_target" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionResult" />
       <config projectName="Project" targetName="tf2_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="actionlib_generate_messages_py" />
-      <config projectName="Project" targetName="roscpp_generate_messages_nodejs" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspGoal" />
+      <config projectName="Project" targetName="roscpp_generate_messages_nodejs" />
       <config projectName="Project" targetName="control_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspGoal" />
       <config projectName="Project" targetName="clean_test_results_franka_hw" />
       <config projectName="Project" targetName="franka_control_generate_messages_nodejs" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingAction" />
@@ -38,13 +38,13 @@
       <config projectName="Project" targetName="thesis_franka_geneus" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionGoal" />
       <config projectName="Project" targetName="franka_control_gennodejs" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_py" />
       <config projectName="Project" targetName="gmock_main" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_py" />
       <config projectName="Project" targetName="franka_gripper_generate_messages_eus" />
       <config projectName="Project" targetName="franka_hw_test" />
       <config projectName="Project" targetName="control_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="franka_control_generate_messages" />
       <config projectName="Project" targetName="franka_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_control_generate_messages" />
       <config projectName="Project" targetName="run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" />
       <config projectName="Project" targetName="franka_example_controllers_geneus" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingGoal" />
@@ -64,9 +64,9 @@
       <config projectName="Project" targetName="sensor_msgs_generate_messages_py" />
       <config projectName="Project" targetName="tf_generate_messages_cpp" />
       <config projectName="Project" targetName="franka_gripper_generate_messages_lisp" />
+      <config projectName="Project" targetName="gmock" />
       <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionGoal" />
       <config projectName="Project" targetName="roscpp_generate_messages_eus" />
-      <config projectName="Project" targetName="gmock" />
       <config projectName="Project" targetName="tests" />
       <config projectName="Project" targetName="thesis_franka_gencpp" />
       <config projectName="Project" targetName="franka_example_controllers" />
@@ -91,13 +91,13 @@
       <config projectName="Project" targetName="franka_example_controllers_generate_messages_eus" />
       <config projectName="Project" targetName="franka_example_controllers_generate_messages_nodejs" />
       <config projectName="Project" targetName="franka_msgs_geneus" />
-      <config projectName="Project" targetName="tf_generate_messages_lisp" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionResult" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionGoal" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionResult" />
+      <config projectName="Project" targetName="tf_generate_messages_lisp" />
       <config projectName="Project" targetName="franka_control_services" />
       <config projectName="Project" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionResult" />
       <config projectName="Project" targetName="gripper_joint_state_publisher" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionResult" />
       <config projectName="Project" targetName="geometry_msgs_generate_messages_eus" />
       <config projectName="Project" targetName="franka_msgs_gencpp" />
       <config projectName="Project" targetName="tf_generate_messages_py" />
@@ -112,28 +112,28 @@
       <config projectName="Project" targetName="franka_example_controllers_genlisp" />
       <config projectName="Project" targetName="robot_joint_state_publisher" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveResult" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_eus" />
       <config projectName="Project" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_eus" />
       <config projectName="Project" targetName="_franka_example_controllers_generate_messages_check_deps_JointTorqueComparison" />
       <config projectName="Project" targetName="franka_control_node" />
       <config projectName="Project" targetName="franka_example_controllers_genpy" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingFeedback" />
       <config projectName="Project" targetName="actionlib_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="controller_manager_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionGoal" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionGoal" />
       <config projectName="Project" targetName="actionlib_generate_messages_eus" />
       <config projectName="Project" targetName="download_extra_data" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_py" />
       <config projectName="Project" targetName="franka_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_py" />
       <config projectName="Project" targetName="geometry_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="controller_manager_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="actionlib_generate_messages_lisp" />
       <config projectName="Project" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="actionlib_generate_messages_lisp" />
       <config projectName="Project" targetName="_thesis_franka_generate_messages_check_deps_GripperData" />
       <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetCartesianImpedance" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionResult" />
       <config projectName="Project" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionResult" />
       <config projectName="Project" targetName="sensor_msgs_generate_messages_eus" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionFeedback" />
       <config projectName="Project" targetName="std_msgs_generate_messages_lisp" />
@@ -144,18 +144,18 @@
       <config projectName="Project" targetName="gtest_main" />
       <config projectName="Project" targetName="franka_gripper_generate_messages_py" />
       <config projectName="Project" targetName="thesis_franka_gennodejs" />
-      <config projectName="Project" targetName="control_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="thesis_franka_generate_messages_lisp" />
       <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryResult" />
       <config projectName="Project" targetName="tf_generate_messages_nodejs" />
       <config projectName="Project" targetName="franka_example_controllers_gencfg" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_nodejs" />
       <config projectName="Project" targetName="franka_msgs_generate_messages" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_nodejs" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopResult" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspAction" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="cartesian_impedance_control_motionPlanner" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="std_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="_franka_msgs_generate_messages_check_deps_Errors" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingResult" />
@@ -164,16 +164,16 @@
       <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetEEFrame" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="franka_example_controllers_gennodejs" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionGoal" />
       <config projectName="Project" targetName="std_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionGoal" />
       <config projectName="Project" targetName="trajectory_msgs_generate_messages_py" />
       <config projectName="Project" targetName="franka_gripper_genlisp" />
       <config projectName="Project" targetName="doxygen" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopGoal" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_lisp" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionFeedback" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveGoal" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_lisp" />
       <config projectName="Project" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveGoal" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveFeedback" />
       <config projectName="Project" targetName="controller_manager_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_cpp" />
@@ -181,8 +181,8 @@
       <config projectName="Project" targetName="thesis_franka_generate_messages_cpp" />
       <config projectName="Project" targetName="run_tests" />
       <config projectName="Project" targetName="franka_control_geneus" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="thesis_franka_genlisp" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="thesis_franka_generate_messages_py" />
       <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryGoal" />
       <config projectName="Project" targetName="tf2_msgs_generate_messages_lisp" />
@@ -191,8 +191,8 @@
       <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_eus" />
       <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryFeedback" />
       <config projectName="Project" targetName="thesis_franka_generate_messages_eus" />
-      <config projectName="Project" targetName="franka_control_gencpp" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspEpsilon" />
+      <config projectName="Project" targetName="franka_control_gencpp" />
       <config projectName="Project" targetName="franka_gripper_generate_messages_nodejs" />
       <config projectName="Project" targetName="trajectory_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionFeedback" />
@@ -223,27 +223,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="176e56c0-f007-4a54-ba42-b6ddd0ed0afb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_motionPlanner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_motionPlanner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_sub.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/communication_test.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/echo_robot_state.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/force_control.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_velocity_motion.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/generate_consecutive_motions.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/generate_elbow_motion.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/generate_joint_position_motion.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/generate_joint_velocity_motion.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/grasp_object.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/joint_impedance_control.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/joint_point_to_point_motion.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/motion_with_control.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/print_joint_poses.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thesis_franka/srv/GripperData.srv" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/srv/GripperData.srv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -255,24 +238,42 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_motionPlanner.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+            <state relative-caret-position="159">
+              <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
               <folding>
+                <element signature="e#0#16#0" expanded="true" />
                 <element signature="e#299#316#0" expanded="true" />
-                <element signature="e#1741#1760#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/libfranka/include/franka/robot.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="198">
+              <caret line="145" column="7" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/libfranka/include/franka/gripper.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/thesis_franka/srv/GripperData.srv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -290,6 +291,8 @@
       <find>old_vel_x</find>
       <find>speed</find>
       <find>generateMotionPlan</find>
+      <find>starting</find>
+      <find>start_x</find>
     </findStrings>
     <replaceStrings>
       <replace>publish_current_position</replace>
@@ -313,17 +316,18 @@
         <option value="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_sub.cpp" />
         <option value="$PROJECT_DIR$/src/thesis_franka/src/MotionPlanner.h" />
         <option value="$PROJECT_DIR$/src/thesis_franka/src/MotionPlanner.cpp" />
-        <option value="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_motionPlanner.cpp" />
         <option value="$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/thesis_franka/srv/GripperData.srv" />
+        <option value="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_motionPlanner.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1431" />
-    <option name="y" value="-4" />
-    <option name="width" value="1615" />
-    <option name="height" value="1054" />
+    <option name="x" value="1586" />
+    <option name="y" value="141" />
+    <option name="width" value="1613" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -363,7 +367,7 @@
               <item name="panda_c++" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="thesis_franka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="srv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1626,7 +1630,9 @@
       <workItem from="1551519509284" duration="3981000" />
       <workItem from="1560802872546" duration="2152000" />
       <workItem from="1561881364691" duration="297000" />
-      <workItem from="1561881763440" duration="2119000" />
+      <workItem from="1561881763440" duration="15206000" />
+      <workItem from="1561915403777" duration="838000" />
+      <workItem from="1561917038686" duration="4374000" />
     </task>
     <task id="LOCAL-00001" summary="check for improvement in robot controller grasp done">
       <created>1551241980011</created>
@@ -1639,27 +1645,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75421000" />
+    <option name="totallyTimeSpent" value="93720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1430" y="-11" width="1617" height="1062" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18036966" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23454429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3279396" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32901832" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49968132" visible="true" weight="0.3279396" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399137" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32766616" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002764" side_tool="true" weight="0.32810867" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49904397" weight="0.32686085" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50031865" side_tool="true" weight="0.3279396" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4997236" weight="0.32810867" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.65803665" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.3700108" />
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.32810867" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.47572815" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1820,16 +1826,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/generate_cartesian_pose_motion.cpp" />
-    <entry file="file://$USER_HOME$/libfranka/include/franka/robot.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="255" column="7" selection-start-line="255" selection-start-column="7" selection-end-line="255" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/print_joint_poses.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/thesis_franka/package.xml" />
-    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/franka_controller_sub.cpp" />
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/force_control.cpp" />
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/motion_with_control.cpp" />
@@ -1861,38 +1858,68 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/MotionPlanner.h" />
-    <entry file="file://$USER_HOME$/libfranka/include/franka/gripper.h">
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_sub.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/package.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="77" column="7" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+        <state relative-caret-position="-475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="48" column="54" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_sub.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/MotionPlanner.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
+        <state relative-caret-position="918">
+          <caret line="98" column="48" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devel/include/thesis_franka/GripperData.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devel/include/thesis_franka/GripperDataRequest.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thesis_franka/srv/GripperData.srv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/libfranka/include/franka/robot.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="145" column="7" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/libfranka/include/franka/gripper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_motionPlanner.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+        <state relative-caret-position="159">
+          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
           <folding>
+            <element signature="e#0#16#0" expanded="true" />
             <element signature="e#299#316#0" expanded="true" />
-            <element signature="e#1741#1760#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

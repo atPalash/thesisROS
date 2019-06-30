@@ -46,6 +46,7 @@ catkin_package(
 include_directories(
         # include
         ${catkin_INCLUDE_DIRS}
+        /home/palash/thesisROS/panda_c++/devel/include
 )
 
 add_executable(cartesian_impedance_control_motionPlanner src/cartesian_impedance_control_motionPlanner.cpp src/examples_common.cpp src/MotionPlanner.cpp)
