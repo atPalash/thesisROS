@@ -49,34 +49,13 @@ include_directories(
 )
 
 add_executable(cartesian_impedance_control_motionPlanner src/cartesian_impedance_control_motionPlanner.cpp src/examples_common.cpp src/MotionPlanner.cpp)
-add_executable(cartesian_impedance_control_sub src/cartesian_impedance_control_sub.cpp src/examples_common.cpp)
-add_executable(joint_impedance_control src/joint_impedance_control.cpp src/examples_common.cpp)
 
 target_link_libraries(cartesian_impedance_control_motionPlanner PUBLIC
   ${Franka_LIBRARIES}
   ${catkin_LIBRARIES}
 )
-target_link_libraries(cartesian_impedance_control_sub PUBLIC
-  ${Franka_LIBRARIES}
-  ${catkin_LIBRARIES}
-)
-target_link_libraries(joint_impedance_control PUBLIC
-  ${Franka_LIBRARIES}
-  ${catkin_LIBRARIES}
-)
 
 target_include_directories(cartesian_impedance_control_motionPlanner SYSTEM PUBLIC
-  ${Franka_INCLUDE_DIRS}
-  ${EIGEN3_INCLUDE_DIRS}
-  ${catkin_INCLUDE_DIRS}
-)
-
-target_include_directories(cartesian_impedance_control_sub SYSTEM PUBLIC
-  ${Franka_INCLUDE_DIRS}
-  ${EIGEN3_INCLUDE_DIRS}
-  ${catkin_INCLUDE_DIRS}
-)
-target_include_directories(joint_impedance_control SYSTEM PUBLIC
   ${Franka_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
