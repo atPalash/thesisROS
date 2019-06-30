@@ -1,0 +1,2 @@
+thesis_realsense
+-DCATKIN_DEVEL_PREFIX=/home/palash/thesis/thesisROS/panda_python/devel -DCMAKE_INSTALL_PREFIX=/home/palash/thesis/thesisROS/panda_python/install -G Unix Makefiles

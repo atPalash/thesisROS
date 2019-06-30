@@ -1,0 +1,8 @@
+prefix=/home/palash/thesis/thesisROS/panda_python/install
+
+Name: thesis_realsense
+Description: Description of thesis_realsense
+Version: 0.0.0
+Cflags: -I/home/palash/thesis/thesisROS/panda_python/install/include
+Libs: -L/home/palash/thesis/thesisROS/panda_python/install/lib 
+Requires: message_runtime

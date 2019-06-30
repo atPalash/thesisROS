@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: panda_python
-Description: Description of panda_python
-Version: 0.0.0
-Cflags: 
-Libs: -L/usr/local/lib 
-Requires: 
