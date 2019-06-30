@@ -36,9 +36,10 @@ std::array<double, 16> current_pose_;
 double cur_x = std::numeric_limits<double>::quiet_NaN();
 double cur_y = std::numeric_limits<double>::quiet_NaN();
 double cur_z = std::numeric_limits<double>::quiet_NaN();
-std::string robot_ip = "";
 bool plan_available = false;
+bool one_complete_motion = false;
 
+franka::Robot* robot = nullptr;
 franka::Gripper* gripper = nullptr;  // just for the sake of creating a global object, will be changed later
 
 /**
@@ -158,13 +159,8 @@ bool generateMotionPlan(thesis_franka::GripperData::Request  &req,
 
     graspCallback(req.max_contact_width, req.max_contact_velocity, req.max_contact_force, false);
 
-    franka::Robot robot(robot_ip);
-    std::array<double, 7> q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
-                                            -0.6899356769762541,-0.0006083739476036627, 0.9990197826387897, 0.7855223296198005}};
-    MotionGenerator motion_generator(0.2, q_goal);
-    robot.control(motion_generator);
-
     sleep(5);
+    one_complete_motion = true;
     res.grasp_result = 1;
     return true;
 }
@@ -177,170 +173,196 @@ int main(int argc, char** argv) {
         std::cerr << "Usage: ./franka_gripper_control <robot-hostname>" << std::endl;
         return -1;
     }
-    try {
+    while(true) {
+        try {
+            robot = new franka::Robot(argv[1]);
+            gripper = new franka::Gripper(argv[1]);
+            gripper->homing();
+            sleep(2);
+            one_complete_motion = false;
+            robot->automaticErrorRecovery();
+            //robot_server service for receiving request from clients to initiate robot motion
+            ros::ServiceServer service = n.advertiseService("robot_server", generateMotionPlan);
 
-        franka::Robot robot(argv[1]);
-        gripper = new franka::Gripper(argv[1]);
-        gripper->homing();
-        sleep(2);
-
-        robot_ip = argv[1];
-        //robot_server service for receiving request from clients to initiate robot motion
-        ros::ServiceServer service = n.advertiseService("robot_server", generateMotionPlan);
-
-        std::array<double, 7> q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
-                                                -0.6899356769762541,-0.0006083739476036627, 0.9990197826387897, 0.7855223296198005}};
-        MotionGenerator motion_generator(0.2, q_goal);
-        ROS_WARN_STREAM("WARNING: This example will move the robot! ,please make sure to have the user stop button at hand!");
-        ROS_INFO_STREAM("Moving to initial joint configuration.");
-        ROS_INFO_STREAM("Press any key to continue...");
-        std::cin.ignore();
-        robot.control(motion_generator);
+            std::array<double, 7> q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
+                                                    -0.6899356769762541, -0.0006083739476036627, 0.9990197826387897, 0.7855223296198005}};
+            MotionGenerator motion_generator(0.2, q_goal);
+            ROS_WARN_STREAM(
+                    "WARNING: This example will move the robot! ,please make sure to have the user stop button at hand!");
+            ROS_INFO_STREAM("Moving to initial joint configuration.");
+            ROS_INFO_STREAM("Press any key to continue...");
+            std::cin.ignore();
+            robot->control(motion_generator);
 
 
-        // Set the collision behavior.
-        std::array<double, 7> lower_torque_thresholds_nominal{
-                {25.0, 25.0, 22.0, 20.0, 19.0, 17.0, 14.}};
-        std::array<double, 7> upper_torque_thresholds_nominal{
-                {35.0, 35.0, 32.0, 30.0, 29.0, 27.0, 24.0}};
-        std::array<double, 7> lower_torque_thresholds_acceleration{
-                {25.0, 25.0, 22.0, 20.0, 19.0, 17.0, 14.0}};
-        std::array<double, 7> upper_torque_thresholds_acceleration{
-                {35.0, 35.0, 32.0, 30.0, 29.0, 27.0, 24.0}};
-        std::array<double, 6> lower_force_thresholds_nominal{{30.0, 30.0, 30.0, 25.0, 25.0, 25.0}};
-        std::array<double, 6> upper_force_thresholds_nominal{{40.0, 40.0, 40.0, 35.0, 35.0, 35.0}};
-        std::array<double, 6> lower_force_thresholds_acceleration{{30.0, 30.0, 30.0, 25.0, 25.0, 25.0}};
-        std::array<double, 6> upper_force_thresholds_acceleration{{40.0, 40.0, 40.0, 35.0, 35.0, 35.0}};
-        robot.setCollisionBehavior(
-                lower_torque_thresholds_acceleration, upper_torque_thresholds_acceleration,
-                lower_torque_thresholds_nominal, upper_torque_thresholds_nominal,
-                lower_force_thresholds_acceleration, upper_force_thresholds_acceleration,
-                lower_force_thresholds_nominal, upper_force_thresholds_nominal);
-        franka::Model model = robot.loadModel();
-        double time = 0.0;
+            // Set the collision behavior.
+            std::array<double, 7> lower_torque_thresholds_nominal{
+                    {25.0, 25.0, 22.0, 20.0, 19.0, 17.0, 14.}};
+            std::array<double, 7> upper_torque_thresholds_nominal{
+                    {35.0, 35.0, 32.0, 30.0, 29.0, 27.0, 24.0}};
+            std::array<double, 7> lower_torque_thresholds_acceleration{
+                    {25.0, 25.0, 22.0, 20.0, 19.0, 17.0, 14.0}};
+            std::array<double, 7> upper_torque_thresholds_acceleration{
+                    {35.0, 35.0, 32.0, 30.0, 29.0, 27.0, 24.0}};
+            std::array<double, 6> lower_force_thresholds_nominal{{30.0, 30.0, 30.0, 25.0, 25.0, 25.0}};
+            std::array<double, 6> upper_force_thresholds_nominal{{40.0, 40.0, 40.0, 35.0, 35.0, 35.0}};
+            std::array<double, 6> lower_force_thresholds_acceleration{{30.0, 30.0, 30.0, 25.0, 25.0, 25.0}};
+            std::array<double, 6> upper_force_thresholds_acceleration{{40.0, 40.0, 40.0, 35.0, 35.0, 35.0}};
+            robot->setCollisionBehavior(
+                    lower_torque_thresholds_acceleration, upper_torque_thresholds_acceleration,
+                    lower_torque_thresholds_nominal, upper_torque_thresholds_nominal,
+                    lower_force_thresholds_acceleration, upper_force_thresholds_acceleration,
+                    lower_force_thresholds_nominal, upper_force_thresholds_nominal);
+            franka::Model model = robot->loadModel();
+            double time = 0.0;
 
-        auto initial_pose = robot.readOnce().O_T_EE_d;
-        cur_x = initial_pose[12];
-        cur_y = initial_pose[13];
-        cur_z = initial_pose[14];
-        current_pose_ = initial_pose;
+            auto initial_pose = robot->readOnce().O_T_EE_d;
+            cur_x = initial_pose[12];
+            cur_y = initial_pose[13];
+            cur_z = initial_pose[14];
+            current_pose_ = initial_pose;
 
-        // call the subscription thread
+            // call the subscription thread
 
-        std::thread t1(publish_current_position);
+            std::thread t1(publish_current_position);
 
-        ROS_INFO("Waiting for GOAL");
-        while(isnan(joint_6_val) || isnan(goal_x)){
-            sleep(1);
-        }
-        // first align the gripper with the object to grip and then begin the motion
-        ROS_INFO_STREAM("Aligning gripper with object");
-        q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
-                          -0.6899356769762541,-0.0006083739476036627, 0.9990197826387897, 0.7855223296198005-joint_6_val}};
-        MotionGenerator motion_generator1(0.2, q_goal);
-        robot.control(motion_generator1);
-        sleep(2);
-
-        ROS_INFO_STREAM("Starting Robot motion");
-
-        while(!plan_available){
-            sleep(1);
-        }
-
-        auto cartesian_velocity_callback = [=, &time](const franka::RobotState& robot_state,
-                                                      franka::Duration time_step) -> franka::CartesianVelocities {
-            double vel_x = 0.0;
-            double vel_y = 0.0;
-            double vel_z = 0.0;
-
-            static double old_vel_x = 0.0;
-            static double old_vel_y = 0.0;
-            static double old_vel_z = 0.0;
-
-            time += time_step.toSec();
-
-            auto state_pose = robot_state.O_T_EE_d;
-            current_pose_ = state_pose;
-
-            cur_x = current_pose_[12];
-            cur_y = current_pose_[13];
-            cur_z = current_pose_[14];
-
-            // initially, the robot moves to its current position (-> no motion)
-            if (isnan(target_x)) {
-                target_x = cur_x;
-                target_y = cur_y;
-                target_z = cur_z;
+            ROS_INFO("Waiting for GOAL");
+            while (isnan(joint_6_val) || isnan(goal_x)) {
+                sleep(1);
             }
-            double vec_x = target_x - cur_x;
-            double vec_y = target_y - cur_y;
-            double vec_z = target_z - cur_z;
+            // first align the gripper with the object to grip and then begin the motion
+            ROS_INFO_STREAM("Aligning gripper with object");
+            q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
+                              -0.6899356769762541, -0.0006083739476036627, 0.9990197826387897,
+                              0.7855223296198005 - joint_6_val}};
+            MotionGenerator motion_generator1(0.2, q_goal);
+            robot->control(motion_generator1);
+            sleep(2);
 
-            double l2_norm = sqrt(vec_x*vec_x + vec_y*vec_y + vec_z*vec_z);
+            ROS_INFO_STREAM("Starting Robot motion");
 
-            if (l2_norm < 0.02) {
-                vel_x = 0.9*old_vel_x;
-                vel_y = 0.9*old_vel_y;
-                vel_z = 0.9*old_vel_z;
-            }
-            else {
-                vel_x = speed*(vec_x / l2_norm);
-                vel_y = speed*(vec_y / l2_norm);
-                vel_z = speed*(vec_z / l2_norm);
+            while (!plan_available) {
+                sleep(1);
             }
 
-            vel_x = 0.99*old_vel_x + 0.01*vel_x;
-            vel_y = 0.99*old_vel_y + 0.01*vel_y;
-            vel_z = 0.99*old_vel_z + 0.01*vel_z;
+            auto cartesian_velocity_callback = [=, &time](const franka::RobotState &robot_state,
+                                                          franka::Duration time_step) -> franka::CartesianVelocities {
+                double vel_x = 0.0;
+                double vel_y = 0.0;
+                double vel_z = 0.0;
 
-            old_vel_x = vel_x;
-            old_vel_y = vel_y;
-            old_vel_z = vel_z;
+                static double old_vel_x = 0.0;
+                static double old_vel_y = 0.0;
+                static double old_vel_z = 0.0;
 
-            franka::CartesianVelocities output = {{vel_x, vel_y, vel_z, 0.0, 0.0, 0.0}};
+                time += time_step.toSec();
 
-            double vel_norm = sqrt(vel_x*vel_x + vel_y*vel_y + vel_z*vel_z);
-            return output;
-        };
-        // Set gains for the joint impedance control.
-        // Stiffness
-        const std::array<double, 7> k_gains = {{60.0, 60.0, 60.0, 60.0, 60.0, 30.0, 20.0}};
-        // Damping
-        const std::array<double, 7> d_gains = {{50.0, 50.0, 50.0, 50.0, 30.0, 25.0, 15.0}};
+                auto state_pose = robot_state.O_T_EE_d;
+                current_pose_ = state_pose;
 
-        std::function<franka::Torques(const franka::RobotState&, franka::Duration)>
-                impedance_control_callback =
-                [&model, k_gains, d_gains](
-                        const franka::RobotState& state, franka::Duration /*period*/) -> franka::Torques {
-                    // Read current coriolis terms from model.
-                    std::array<double, 7> coriolis = model.coriolis(state);
+                cur_x = current_pose_[12];
+                cur_y = current_pose_[13];
+                cur_z = current_pose_[14];
 
-                    // Compute torque command from joint impedance control law.
-                    // Note: The answer to our Cartesian pose inverse kinematics is always in state.q_d with one
-                    // time step delay.
-                    std::array<double, 7> tau_d_calculated;
-                    for (size_t i = 0; i < 7; i++) {
-                        tau_d_calculated[i] =
-                                k_gains[i] * (state.q_d[i] - state.q[i]) - d_gains[i] * state.dq[i] + coriolis[i];
-                    }
+                // initially, the robot moves to its current position (-> no motion)
+                if (isnan(target_x)) {
+                    target_x = cur_x;
+                    target_y = cur_y;
+                    target_z = cur_z;
+                }
+                double vec_x = target_x - cur_x;
+                double vec_y = target_y - cur_y;
+                double vec_z = target_z - cur_z;
 
-                    // The following line is only necessary for printing the rate limited torque. As we activated
-                    // rate limiting for the control loop (activated by default), the torque would anyway be
-                    // adjusted!
-                    std::array<double, 7> tau_d_rate_limited =
-                            franka::limitRate(franka::kMaxTorqueRate, tau_d_calculated, state.tau_J_d);
+                double l2_norm = sqrt(vec_x * vec_x + vec_y * vec_y + vec_z * vec_z);
 
-                    // Send torque command.
-                    return tau_d_rate_limited;
-                };
-        robot.control(impedance_control_callback, cartesian_velocity_callback);
-        if(t1.joinable()){
-            t1.join();
+                if (l2_norm < 0.02) {
+                    vel_x = 0.9 * old_vel_x;
+                    vel_y = 0.9 * old_vel_y;
+                    vel_z = 0.9 * old_vel_z;
+                } else {
+                    vel_x = speed * (vec_x / l2_norm);
+                    vel_y = speed * (vec_y / l2_norm);
+                    vel_z = speed * (vec_z / l2_norm);
+                }
+
+                vel_x = 0.99 * old_vel_x + 0.01 * vel_x;
+                vel_y = 0.99 * old_vel_y + 0.01 * vel_y;
+                vel_z = 0.99 * old_vel_z + 0.01 * vel_z;
+
+                old_vel_x = vel_x;
+                old_vel_y = vel_y;
+                old_vel_z = vel_z;
+
+                franka::CartesianVelocities output = {{vel_x, vel_y, vel_z, 0.0, 0.0, 0.0}};
+
+                double vel_norm = sqrt(vel_x * vel_x + vel_y * vel_y + vel_z * vel_z);
+//                 stopping the motino properly
+                if (one_complete_motion) {
+                    ROS_WARN_STREAM("shutting down control");
+                    output = {{0.0, 0.0, 0.0, 0.0, 0.0, 0.0}};
+                    return franka::MotionFinished(output);
+                }
+                return output;
+            };
+            // Set gains for the joint impedance control.
+            // Stiffness
+            const std::array<double, 7> k_gains = {{60.0, 60.0, 60.0, 60.0, 60.0, 30.0, 20.0}};
+            // Damping
+            const std::array<double, 7> d_gains = {{50.0, 50.0, 50.0, 50.0, 30.0, 25.0, 15.0}};
+
+            std::function<franka::Torques(const franka::RobotState &, franka::Duration)>
+                    impedance_control_callback =
+                    [&model, k_gains, d_gains](
+                            const franka::RobotState &state, franka::Duration /*period*/) -> franka::Torques {
+                        // Read current coriolis terms from model.
+                        std::array<double, 7> coriolis = model.coriolis(state);
+
+                        // Compute torque command from joint impedance control law.
+                        // Note: The answer to our Cartesian pose inverse kinematics is always in state.q_d with one
+                        // time step delay.
+                        std::array<double, 7> tau_d_calculated;
+                        for (size_t i = 0; i < 7; i++) {
+                            tau_d_calculated[i] =
+                                    k_gains[i] * (state.q_d[i] - state.q[i]) - d_gains[i] * state.dq[i] + coriolis[i];
+                        }
+
+                        // The following line is only necessary for printing the rate limited torque. As we activated
+                        // rate limiting for the control loop (activated by default), the torque would anyway be
+                        // adjusted!
+                        std::array<double, 7> tau_d_rate_limited =
+                                franka::limitRate(franka::kMaxTorqueRate, tau_d_calculated, state.tau_J_d);
+                        if (one_complete_motion) {
+                            ROS_WARN_STREAM("shutting down control");
+                            franka::Torques output = {{0.0, 0.0, 0.0, 0.0, 0.0, 0.0}};
+                            return franka::MotionFinished(output);
+                        }
+                        // Send torque command.
+                        return tau_d_rate_limited;
+                    };
+            robot->control(impedance_control_callback, cartesian_velocity_callback);
+//            robot->control(cartesian_velocity_callback);
+            ROS_WARN_STREAM("closing subscription thread");
+//            if(t1.joinable()){
+//                t1.join();
+//            }
+            sleep(5);
+            q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
+                              -0.6899356769762541, -0.0006083739476036627, 0.9990197826387897, 0.7855223296198005}};
+            MotionGenerator motion_generator2(0.2, q_goal);
+            robot->control(motion_generator2);
+
+            ROS_INFO_STREAM("press Y to continue N to abort");
+            std::string user_input;
+            cin >> user_input;
+            if (user_input != "Y") {
+                break;
+            }
+            ROS_INFO_STREAM("continuing...");
+        } catch (const franka::Exception &e) {
+            std::cout << e.what() << std::endl;
+            continue;
         }
-    } catch (const franka::Exception& e) {
-        std::cout << e.what() << std::endl;
-        return -1;
     }
-
     return 0;
 }
