@@ -42,7 +42,7 @@ std::vector<std::vector<double>> MotionPlanner::discretise(std::vector<double> &
     std::vector<double> p1_to_p2;
     p1_to_p2.push_back({point2[0] - point1[0]});
     p1_to_p2.push_back({point2[1] - point1[1]});
-    p1_to_p2.push_back({point2[0] - point1[1]});
+    p1_to_p2.push_back({point2[2] - point1[2]});
 
     double distance = sqrt(pow(p1_to_p2[0],2) + pow(p1_to_p2[1], 2) + pow(p1_to_p2[2], 2));
 
