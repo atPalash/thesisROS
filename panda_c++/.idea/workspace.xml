@@ -2,203 +2,203 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Project" targetName="thesis_franka_generate_messages_nodejs" />
-      <config projectName="Project" targetName="roscpp_generate_messages_py" />
-      <config projectName="Project" targetName="franka_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="clean_test_results" />
-      <config projectName="Project" targetName="franka_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="franka_msgs_genpy" />
-      <config projectName="Project" targetName="franka_control_genlisp" />
-      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="thesis_franka_genpy" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetFullCollisionBehavior" />
-      <config projectName="Project" targetName="franka_example_controllers_generate_messages_py" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="franka_control_genpy" />
-      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionFeedback" />
-      <config projectName="Project" targetName="franka_gripper_generate_messages" />
-      <config projectName="Project" targetName="dynamic_reconfigure_gencfg" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveAction" />
-      <config projectName="Project" targetName="_run_tests_franka_hw_rostest" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="_catkin_empty_exported_target" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionResult" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="actionlib_generate_messages_py" />
-      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="roscpp_generate_messages_nodejs" />
-      <config projectName="Project" targetName="control_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspGoal" />
-      <config projectName="Project" targetName="clean_test_results_franka_hw" />
-      <config projectName="Project" targetName="franka_control_generate_messages_nodejs" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingAction" />
-      <config projectName="Project" targetName="franka_example_controllers_gencpp" />
-      <config projectName="Project" targetName="thesis_franka_geneus" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionGoal" />
-      <config projectName="Project" targetName="franka_control_gennodejs" />
-      <config projectName="Project" targetName="gmock_main" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="franka_gripper_generate_messages_eus" />
-      <config projectName="Project" targetName="franka_hw_test" />
-      <config projectName="Project" targetName="control_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="franka_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="franka_control_generate_messages" />
-      <config projectName="Project" targetName="run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" />
-      <config projectName="Project" targetName="franka_example_controllers_geneus" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingGoal" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryAction" />
-      <config projectName="Project" targetName="franka_gripper" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetForceTorqueCollisionBehavior" />
-      <config projectName="Project" targetName="run_tests_franka_hw_rostest" />
-      <config projectName="Project" targetName="tf_generate_messages_eus" />
-      <config projectName="Project" targetName="franka_hw" />
-      <config projectName="Project" targetName="thesis_franka_generate_messages" />
-      <config projectName="Project" targetName="_run_tests_franka_hw" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspFeedback" />
-      <config projectName="Project" targetName="franka_state_controller" />
-      <config projectName="Project" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="franka_control_generate_messages_py" />
-      <config projectName="Project" targetName="franka_control_generate_messages_cpp" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="tf_generate_messages_cpp" />
-      <config projectName="Project" targetName="franka_gripper_generate_messages_lisp" />
-      <config projectName="Project" targetName="gmock" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionGoal" />
-      <config projectName="Project" targetName="roscpp_generate_messages_eus" />
-      <config projectName="Project" targetName="tests" />
-      <config projectName="Project" targetName="thesis_franka_gencpp" />
-      <config projectName="Project" targetName="franka_example_controllers" />
-      <config projectName="Project" targetName="control_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspResult" />
-      <config projectName="Project" targetName="control_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="franka_example_controllers_generate_messages_cpp" />
-      <config projectName="Project" targetName="franka_gripper_gennodejs" />
-      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="franka_control_generate_messages_eus" />
-      <config projectName="Project" targetName="_run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" />
-      <config projectName="Project" targetName="run_tests_franka_hw" />
-      <config projectName="Project" targetName="franka_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="franka_example_controllers_generate_messages_lisp" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetLoad" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopFeedback" />
-      <config projectName="Project" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionResult" />
-      <config projectName="Project" targetName="franka_gripper_node" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopAction" />
-      <config projectName="Project" targetName="franka_msgs_gennodejs" />
-      <config projectName="Project" targetName="franka_example_controllers_generate_messages_eus" />
-      <config projectName="Project" targetName="franka_example_controllers_generate_messages_nodejs" />
-      <config projectName="Project" targetName="franka_msgs_geneus" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionGoal" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionResult" />
-      <config projectName="Project" targetName="tf_generate_messages_lisp" />
-      <config projectName="Project" targetName="franka_control_services" />
-      <config projectName="Project" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="Project" targetName="gripper_joint_state_publisher" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionResult" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="franka_msgs_gencpp" />
-      <config projectName="Project" targetName="tf_generate_messages_py" />
-      <config projectName="Project" targetName="_franka_msgs_generate_messages_check_deps_FrankaState" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetKFrame" />
-      <config projectName="Project" targetName="actionlib_generate_messages_nodejs" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionFeedback" />
-      <config projectName="Project" targetName="franka_example_controllers_generate_messages" />
-      <config projectName="Project" targetName="franka_msgs_genlisp" />
-      <config projectName="Project" targetName="franka_example_controllers_genlisp" />
-      <config projectName="Project" targetName="robot_joint_state_publisher" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveResult" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="_franka_example_controllers_generate_messages_check_deps_JointTorqueComparison" />
-      <config projectName="Project" targetName="franka_control_node" />
-      <config projectName="Project" targetName="franka_example_controllers_genpy" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingFeedback" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="controller_manager_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="gmock" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="Project" targetName="thesis_franka_generate_messages_nodejs" />
+      <config projectName="Project" targetName="gtest_main" />
+      <config projectName="Project" targetName="franka_gripper_gencpp" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages_lisp" />
+      <config projectName="Project" targetName="_franka_example_controllers_generate_messages_check_deps_JointTorqueComparison" />
+      <config projectName="Project" targetName="franka_state_controller" />
+      <config projectName="Project" targetName="franka_example_controllers_gencpp" />
+      <config projectName="Project" targetName="tf_generate_messages_eus" />
+      <config projectName="Project" targetName="gripper_joint_state_publisher" />
       <config projectName="Project" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionGoal" />
-      <config projectName="Project" targetName="actionlib_generate_messages_eus" />
-      <config projectName="Project" targetName="download_extra_data" />
-      <config projectName="Project" targetName="franka_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingGoal" />
+      <config projectName="Project" targetName="doxygen" />
+      <config projectName="Project" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_example_controllers_gencfg" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_py" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetJointImpedance" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingResult" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="franka_gripper_genlisp" />
       <config projectName="Project" targetName="geometry_msgs_generate_messages_nodejs" />
       <config projectName="Project" targetName="controller_manager_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="actionlib_generate_messages_lisp" />
       <config projectName="Project" targetName="_thesis_franka_generate_messages_check_deps_GripperData" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetCartesianImpedance" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionResult" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionFeedback" />
-      <config projectName="Project" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="franka_control_generate_messages_lisp" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_py" />
-      <config projectName="Project" targetName="actionlib_generate_messages_cpp" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="gtest_main" />
-      <config projectName="Project" targetName="franka_gripper_generate_messages_py" />
-      <config projectName="Project" targetName="thesis_franka_gennodejs" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="control_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="thesis_franka_generate_messages_lisp" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryResult" />
-      <config projectName="Project" targetName="tf_generate_messages_nodejs" />
-      <config projectName="Project" targetName="franka_example_controllers_gencfg" />
-      <config projectName="Project" targetName="franka_msgs_generate_messages" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_nodejs" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopResult" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspAction" />
-      <config projectName="Project" targetName="cartesian_impedance_control_motionPlanner" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="_franka_msgs_generate_messages_check_deps_Errors" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingResult" />
-      <config projectName="Project" targetName="gtest" />
-      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetEEFrame" />
-      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="franka_example_controllers_gennodejs" />
-      <config projectName="Project" targetName="std_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionGoal" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_py" />
-      <config projectName="Project" targetName="franka_gripper_genlisp" />
-      <config projectName="Project" targetName="doxygen" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopGoal" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionFeedback" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_lisp" />
-      <config projectName="Project" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveGoal" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveFeedback" />
-      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_cpp" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_cpp" />
-      <config projectName="Project" targetName="franka_gripper_generate_messages_cpp" />
-      <config projectName="Project" targetName="thesis_franka_generate_messages_cpp" />
-      <config projectName="Project" targetName="run_tests" />
-      <config projectName="Project" targetName="franka_control_geneus" />
-      <config projectName="Project" targetName="thesis_franka_genlisp" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="thesis_franka_generate_messages_py" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryGoal" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="sensor_msgs_generate_messages_lisp" />
-      <config projectName="Project" targetName="franka_gripper_geneus" />
-      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages_nodejs" />
       <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryFeedback" />
+      <config projectName="Project" targetName="franka_msgs_genpy" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionResult" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="clean_test_results" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionFeedback" />
+      <config projectName="Project" targetName="_run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveFeedback" />
+      <config projectName="Project" targetName="cartesian_impedance_control_motionPlanner" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspResult" />
       <config projectName="Project" targetName="thesis_franka_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_msgs_generate_messages_check_deps_Errors" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopGoal" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="franka_control_services" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingAction" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopFeedback" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionResult" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionResult" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="_franka_msgs_generate_messages_check_deps_FrankaState" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages" />
+      <config projectName="Project" targetName="_run_tests_franka_hw_rostest" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages_cpp" />
+      <config projectName="Project" targetName="franka_control_generate_messages_cpp" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetForceTorqueCollisionBehavior" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages_py" />
+      <config projectName="Project" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="Project" targetName="thesis_franka_genlisp" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="franka_example_controllers_gennodejs" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspAction" />
+      <config projectName="Project" targetName="franka_example_controllers_genpy" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetCartesianImpedance" />
+      <config projectName="Project" targetName="tf_generate_messages_cpp" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspFeedback" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionFeedback" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionFeedback" />
+      <config projectName="Project" targetName="franka_gripper_node" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionGoal" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages_py" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_control_generate_messages_nodejs" />
+      <config projectName="Project" targetName="_catkin_empty_exported_target" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages_nodejs" />
+      <config projectName="Project" targetName="run_tests" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionFeedback" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages_lisp" />
+      <config projectName="Project" targetName="robot_joint_state_publisher" />
+      <config projectName="Project" targetName="run_tests_franka_hw_rostest_test_launch_franka_hw_test.test" />
+      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="tf_generate_messages_py" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingFeedback" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetLoad" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionGoal" />
+      <config projectName="Project" targetName="franka_control_generate_messages_py" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="thesis_franka_genpy" />
+      <config projectName="Project" targetName="thesis_franka_generate_messages_cpp" />
+      <config projectName="Project" targetName="gtest" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionFeedback" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_msgs_geneus" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_control_node" />
+      <config projectName="Project" targetName="thesis_franka_generate_messages_lisp" />
+      <config projectName="Project" targetName="gmock_main" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="run_tests_franka_hw" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetKFrame" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryGoal" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="tf_generate_messages_nodejs" />
+      <config projectName="Project" targetName="tests" />
+      <config projectName="Project" targetName="thesis_franka_geneus" />
+      <config projectName="Project" targetName="_run_tests_franka_hw" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="run_tests_franka_hw_rostest" />
+      <config projectName="Project" targetName="franka_example_controllers" />
+      <config projectName="Project" targetName="actionlib_generate_messages_py" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopAction" />
+      <config projectName="Project" targetName="thesis_franka_gennodejs" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages_eus" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopResult" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="roscpp_generate_messages_py" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetFullCollisionBehavior" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="roscpp_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_msgs_genlisp" />
+      <config projectName="Project" targetName="franka_gripper_geneus" />
+      <config projectName="Project" targetName="franka_gripper_genpy" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveGoal" />
+      <config projectName="Project" targetName="franka_gripper_gennodejs" />
+      <config projectName="Project" targetName="thesis_franka_generate_messages_py" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveResult" />
+      <config projectName="Project" targetName="franka_control_gennodejs" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_HomingActionGoal" />
+      <config projectName="Project" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_msgs_gencpp" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_StopActionGoal" />
+      <config projectName="Project" targetName="franka_control_genpy" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionGoal" />
+      <config projectName="Project" targetName="controller_manager_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_example_controllers_genlisp" />
+      <config projectName="Project" targetName="clean_test_results_franka_hw" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryAction" />
+      <config projectName="Project" targetName="dynamic_reconfigure_gencfg" />
+      <config projectName="Project" targetName="franka_gripper" />
+      <config projectName="Project" targetName="franka_control_genlisp" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_cpp" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryResult" />
+      <config projectName="Project" targetName="franka_control_generate_messages" />
+      <config projectName="Project" targetName="franka_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="franka_hw_test" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_example_controllers_geneus" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspActionResult" />
+      <config projectName="Project" targetName="thesis_franka_gencpp" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_ErrorRecoveryActionResult" />
+      <config projectName="Project" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveAction" />
       <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspEpsilon" />
       <config projectName="Project" targetName="franka_control_gencpp" />
-      <config projectName="Project" targetName="franka_gripper_generate_messages_nodejs" />
-      <config projectName="Project" targetName="trajectory_msgs_generate_messages_nodejs" />
-      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_MoveActionFeedback" />
-      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetJointImpedance" />
-      <config projectName="Project" targetName="franka_gripper_gencpp" />
-      <config projectName="Project" targetName="franka_gripper_genpy" />
+      <config projectName="Project" targetName="control_msgs_generate_messages_eus" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="download_extra_data" />
+      <config projectName="Project" targetName="franka_msgs_gennodejs" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_nodejs" />
+      <config projectName="Project" targetName="tf_generate_messages_lisp" />
+      <config projectName="Project" targetName="franka_control_geneus" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="franka_control_generate_messages_lisp" />
+      <config projectName="Project" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="Project" targetName="thesis_franka_generate_messages" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="Project" targetName="_franka_control_generate_messages_check_deps_SetEEFrame" />
+      <config projectName="Project" targetName="_franka_gripper_generate_messages_check_deps_GraspGoal" />
+      <config projectName="Project" targetName="franka_gripper_generate_messages_cpp" />
+      <config projectName="Project" targetName="trajectory_msgs_generate_messages_cpp" />
+      <config projectName="Project" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="Project" targetName="actionlib_generate_messages_eus" />
+      <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="Project" targetName="franka_hw" />
+      <config projectName="Project" targetName="franka_example_controllers_generate_messages_eus" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -224,9 +224,7 @@
   <component name="ChangeListManager">
     <list default="true" id="176e56c0-f007-4a54-ba42-b6ddd0ed0afb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_motionPlanner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_motionPlanner.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/thesis_franka/srv/GripperData.srv" beforeDir="false" afterPath="$PROJECT_DIR$/src/thesis_franka/srv/GripperData.srv" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -241,39 +239,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_motionPlanner.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+            <state relative-caret-position="847">
+              <caret line="225" column="40" selection-start-line="225" selection-start-column="40" selection-end-line="225" selection-end-column="40" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
                 <element signature="e#299#316#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/libfranka/include/franka/robot.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="145" column="7" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/libfranka/include/franka/gripper.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/thesis_franka/srv/GripperData.srv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -293,9 +264,12 @@
       <find>generateMotionPlan</find>
       <find>starting</find>
       <find>start_x</find>
+      <find>robot.</find>
+      <find>robot-&gt;stop();</find>
     </findStrings>
     <replaceStrings>
       <replace>publish_current_position</replace>
+      <replace>robot-&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -335,7 +309,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -367,12 +340,21 @@
               <item name="panda_c++" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="thesis_franka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda_c++" type="b2602c69:ProjectViewProjectNode" />
+              <item name="panda_c++" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="panda_c++" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="thesis_franka" type="462c0819:PsiDirectoryNode" />
               <item name="srv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1633,6 +1615,8 @@
       <workItem from="1561881763440" duration="15206000" />
       <workItem from="1561915403777" duration="838000" />
       <workItem from="1561917038686" duration="4374000" />
+      <workItem from="1561922619821" duration="6058000" />
+      <workItem from="1562320527861" duration="4658000" />
     </task>
     <task id="LOCAL-00001" summary="check for improvement in robot controller grasp done">
       <created>1551241980011</created>
@@ -1641,17 +1625,23 @@
       <option name="project" value="LOCAL" />
       <updated>1551241980011</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="check for improvement in robot controller grasp done--checking better solutions">
+      <created>1561927854447</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561927854453</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93720000" />
+    <option name="totallyTimeSpent" value="104436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1430" y="-11" width="1617" height="1062" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23454429" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24091779" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1773,23 +1763,14 @@
     </ignored-roots>
     <MESSAGE value="checking publish of transformation matrix" />
     <MESSAGE value="check for improvement in robot controller grasp done" />
-    <option name="LAST_COMMIT_MESSAGE" value="check for improvement in robot controller grasp done" />
+    <MESSAGE value="check for improvement in robot controller grasp done--checking better solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="check for improvement in robot controller grasp done--checking better solutions" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///opt/ros/kinetic/share/catkin/cmake/catkin_package.cmake">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="301" selection-start-line="301" selection-end-line="301" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/libfranka/include/franka/control_types.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
-          <folding>
-            <element signature="e#132#148#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1891,6 +1872,30 @@
     <entry file="file://$PROJECT_DIR$/devel/include/thesis_franka/GripperDataRequest.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$USER_HOME$/libfranka/include/franka/control_types.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3810">
+          <caret line="254" column="2" selection-start-line="254" selection-start-column="2" selection-end-line="254" selection-end-column="2" />
+          <folding>
+            <element signature="e#132#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/libfranka/include/franka/robot.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="145" column="7" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/libfranka/include/franka/gripper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/srv/GripperData.srv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1898,24 +1903,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/libfranka/include/franka/robot.h">
+    <entry file="file:///usr/include/x86_64-linux-gnu/bits/nan.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="145" column="7" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
+        <state relative-caret-position="405">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/libfranka/include/franka/gripper.h">
+    <entry file="file:///usr/include/c++/5/thread">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+        <state relative-caret-position="198">
+          <caret line="132" column="6" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/thesis_franka/src/cartesian_impedance_control_motionPlanner.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+        <state relative-caret-position="847">
+          <caret line="225" column="40" selection-start-line="225" selection-start-column="40" selection-end-line="225" selection-end-column="40" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
             <element signature="e#299#316#0" expanded="true" />

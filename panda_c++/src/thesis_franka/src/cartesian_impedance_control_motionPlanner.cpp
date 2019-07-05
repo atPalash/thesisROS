@@ -38,6 +38,7 @@ double cur_y = std::numeric_limits<double>::quiet_NaN();
 double cur_z = std::numeric_limits<double>::quiet_NaN();
 bool plan_available = false;
 bool one_complete_motion = false;
+bool publish_current_position_thread = false;
 
 franka::Robot* robot = nullptr;
 franka::Gripper* gripper = nullptr;  // just for the sake of creating a global object, will be changed later
@@ -89,7 +90,7 @@ void publish_current_position() {
     ros::Publisher publisher = node_handle.advertise<std_msgs::Float64MultiArray>("franka_current_position", 1);
     ros::Rate loop_rate(2000);  // 2 kHz
 
-    while (ros::ok()) {
+    while (publish_current_position_thread) {
         for(int i = 0; i<16; i++){
             states.data[i] = current_pose_[i];
         }
@@ -161,6 +162,7 @@ bool generateMotionPlan(thesis_franka::GripperData::Request  &req,
 
     sleep(5);
     one_complete_motion = true;
+//    robot->stop();
     res.grasp_result = 1;
     return true;
 }
@@ -169,61 +171,67 @@ int main(int argc, char** argv) {
     ros::init(argc, argv, "listener");
     ros::NodeHandle n;
 
+    robot = new franka::Robot(argv[1]);
+    gripper = new franka::Gripper(argv[1]);
+    gripper->homing();
+    sleep(2);
+
+    ros::ServiceServer service = n.advertiseService("robot_server", generateMotionPlan);
+
     if (argc != 2) {
         std::cerr << "Usage: ./franka_gripper_control <robot-hostname>" << std::endl;
         return -1;
     }
-    while(true) {
-        try {
-            robot = new franka::Robot(argv[1]);
-            gripper = new franka::Gripper(argv[1]);
-            gripper->homing();
-            sleep(2);
+//    while(ros::ok()) {
+    try {
+        ROS_INFO_STREAM("Recovered from any previous error");
+
+        robot->automaticErrorRecovery();
+
+
+        //robot_server service for receiving request from clients to initiate robot motion
+        std::array<double, 7> q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
+                                                -0.6899356769762541, -0.0006083739476036627, 0.9990197826387897, 0.7855223296198005}};
+        MotionGenerator motion_generator(0.2, q_goal);
+        ROS_WARN_STREAM(
+                "WARNING: This example will move the robot! ,please make sure to have the user stop button at hand!");
+        ROS_INFO_STREAM("Moving to initial joint configuration.");
+        ROS_INFO_STREAM("Press any key to continue...");
+        std::cin.ignore();
+        robot->control(motion_generator);
+
+
+        // Set the collision behavior.
+        std::array<double, 7> lower_torque_thresholds_nominal{
+                {25.0, 25.0, 22.0, 20.0, 19.0, 17.0, 14.}};
+        std::array<double, 7> upper_torque_thresholds_nominal{
+                {35.0, 35.0, 32.0, 30.0, 29.0, 27.0, 24.0}};
+        std::array<double, 7> lower_torque_thresholds_acceleration{
+                {25.0, 25.0, 22.0, 20.0, 19.0, 17.0, 14.0}};
+        std::array<double, 7> upper_torque_thresholds_acceleration{
+                {35.0, 35.0, 32.0, 30.0, 29.0, 27.0, 24.0}};
+        std::array<double, 6> lower_force_thresholds_nominal{{30.0, 30.0, 30.0, 25.0, 25.0, 25.0}};
+        std::array<double, 6> upper_force_thresholds_nominal{{40.0, 40.0, 40.0, 35.0, 35.0, 35.0}};
+        std::array<double, 6> lower_force_thresholds_acceleration{{30.0, 30.0, 30.0, 25.0, 25.0, 25.0}};
+        std::array<double, 6> upper_force_thresholds_acceleration{{40.0, 40.0, 40.0, 35.0, 35.0, 35.0}};
+        robot->setCollisionBehavior(
+                lower_torque_thresholds_acceleration, upper_torque_thresholds_acceleration,
+                lower_torque_thresholds_nominal, upper_torque_thresholds_nominal,
+                lower_force_thresholds_acceleration, upper_force_thresholds_acceleration,
+                lower_force_thresholds_nominal, upper_force_thresholds_nominal);
+        franka::Model model = robot->loadModel();
+        double time = 0.0;
+
+        while(ros::ok()) {
             one_complete_motion = false;
-            robot->automaticErrorRecovery();
-            //robot_server service for receiving request from clients to initiate robot motion
-            ros::ServiceServer service = n.advertiseService("robot_server", generateMotionPlan);
-
-            std::array<double, 7> q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
-                                                    -0.6899356769762541, -0.0006083739476036627, 0.9990197826387897, 0.7855223296198005}};
-            MotionGenerator motion_generator(0.2, q_goal);
-            ROS_WARN_STREAM(
-                    "WARNING: This example will move the robot! ,please make sure to have the user stop button at hand!");
-            ROS_INFO_STREAM("Moving to initial joint configuration.");
-            ROS_INFO_STREAM("Press any key to continue...");
-            std::cin.ignore();
-            robot->control(motion_generator);
-
-
-            // Set the collision behavior.
-            std::array<double, 7> lower_torque_thresholds_nominal{
-                    {25.0, 25.0, 22.0, 20.0, 19.0, 17.0, 14.}};
-            std::array<double, 7> upper_torque_thresholds_nominal{
-                    {35.0, 35.0, 32.0, 30.0, 29.0, 27.0, 24.0}};
-            std::array<double, 7> lower_torque_thresholds_acceleration{
-                    {25.0, 25.0, 22.0, 20.0, 19.0, 17.0, 14.0}};
-            std::array<double, 7> upper_torque_thresholds_acceleration{
-                    {35.0, 35.0, 32.0, 30.0, 29.0, 27.0, 24.0}};
-            std::array<double, 6> lower_force_thresholds_nominal{{30.0, 30.0, 30.0, 25.0, 25.0, 25.0}};
-            std::array<double, 6> upper_force_thresholds_nominal{{40.0, 40.0, 40.0, 35.0, 35.0, 35.0}};
-            std::array<double, 6> lower_force_thresholds_acceleration{{30.0, 30.0, 30.0, 25.0, 25.0, 25.0}};
-            std::array<double, 6> upper_force_thresholds_acceleration{{40.0, 40.0, 40.0, 35.0, 35.0, 35.0}};
-            robot->setCollisionBehavior(
-                    lower_torque_thresholds_acceleration, upper_torque_thresholds_acceleration,
-                    lower_torque_thresholds_nominal, upper_torque_thresholds_nominal,
-                    lower_force_thresholds_acceleration, upper_force_thresholds_acceleration,
-                    lower_force_thresholds_nominal, upper_force_thresholds_nominal);
-            franka::Model model = robot->loadModel();
-            double time = 0.0;
-
             auto initial_pose = robot->readOnce().O_T_EE_d;
             cur_x = initial_pose[12];
             cur_y = initial_pose[13];
             cur_z = initial_pose[14];
             current_pose_ = initial_pose;
 
+            publish_current_position_thread = true;
             // call the subscription thread
-
             std::thread t1(publish_current_position);
 
             ROS_INFO("Waiting for GOAL");
@@ -324,7 +332,8 @@ int main(int argc, char** argv) {
                         std::array<double, 7> tau_d_calculated;
                         for (size_t i = 0; i < 7; i++) {
                             tau_d_calculated[i] =
-                                    k_gains[i] * (state.q_d[i] - state.q[i]) - d_gains[i] * state.dq[i] + coriolis[i];
+                                    k_gains[i] * (state.q_d[i] - state.q[i]) - d_gains[i] * state.dq[i] +
+                                    coriolis[i];
                         }
 
                         // The following line is only necessary for printing the rate limited torque. As we activated
@@ -343,9 +352,10 @@ int main(int argc, char** argv) {
             robot->control(impedance_control_callback, cartesian_velocity_callback);
 //            robot->control(cartesian_velocity_callback);
             ROS_WARN_STREAM("closing subscription thread");
-//            if(t1.joinable()){
-//                t1.join();
-//            }
+            publish_current_position_thread = false;
+            if(t1.joinable()){
+                t1.join();
+            }
             sleep(5);
             q_goal = {{-1.5712350861180224, 0.31163586411978067, 0.0001420356207276586,
                               -0.6899356769762541, -0.0006083739476036627, 0.9990197826387897, 0.7855223296198005}};
@@ -359,10 +369,12 @@ int main(int argc, char** argv) {
                 break;
             }
             ROS_INFO_STREAM("continuing...");
-        } catch (const franka::Exception &e) {
-            std::cout << e.what() << std::endl;
-            continue;
+            joint_6_val = std::numeric_limits<double>::quiet_NaN();
         }
+    } catch (const franka::Exception &e) {
+        std::cout << e.what() << std::endl;
     }
+//            sleep(2);
+//    }
     return 0;
 }
