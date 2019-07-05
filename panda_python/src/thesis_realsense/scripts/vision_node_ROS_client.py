@@ -22,25 +22,22 @@ def franka_current_position(data):
 
 def detect_object_and_gripping_point(data):
     z_buffer = 0.0
-    tf_endEffector_to_camera = []
-    tf_robotBaseframe_to_end_effector = []
-    orientation_EF = 0
     global current_robot_pose
 
-    tf_endEffector_to_camera = [0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -0.05, 0.05, -0.03, 1]
+    tf_endEffector_to_camera = [0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -0.03, 0.05, -0.03, 1]
     tf_endEffector_to_camera = np.transpose(np.reshape(tf_endEffector_to_camera, (4, 4)))
     tf_robotBaseframe_to_end_effector = np.transpose(np.reshape(current_robot_pose, (4, 4)))
     orientation_EF = FrameTransformation.quaternion_msg_from_matrix(tf_robotBaseframe_to_end_effector)
 
     # print tf_robotBaseframe_to_end_effector
-    object_location_wrt_camera = [[data['x']], [data['y']], [data['z'] + z_buffer], [1]]
+    object_location_wrt_camera = [[data['x']], [data['y']], [data['z']], [1]]
     # print object_location_wrt_camera
     object_location_wrt_endEffector = np.dot(tf_endEffector_to_camera, object_location_wrt_camera)
 
     object_location_wrt_robot_baseframe = np.dot(tf_robotBaseframe_to_end_effector, object_location_wrt_endEffector)
     object_location_wrt_robot_baseframe = {'x': object_location_wrt_robot_baseframe[0][0],
                                            'y': object_location_wrt_robot_baseframe[1][0],
-                                           'z': object_location_wrt_robot_baseframe[2][0]}
+                                           'z': object_location_wrt_robot_baseframe[2][0] + z_buffer}
     object_quaternion_wrt_robot_baseframe = {'x': orientation_EF.x,
                                              'y': orientation_EF.y,
                                              'z': data['o'],
@@ -68,7 +65,7 @@ def detect_object_and_gripping_point(data):
     pose_release.pose.orientation.z = 0.0418481772393
     pose_release.pose.orientation.w = 0.0472680293057
 
-    pose_release.pose.position.x = -0.457470847753
+    pose_release.pose.position.x = 0.457470847753
     pose_release.pose.position.y = -0.3424774123
     pose_release.pose.position.z = -0.03100630017848
 
@@ -76,11 +73,11 @@ def detect_object_and_gripping_point(data):
     gripper_data.id = "objA_grasp"
     gripper_data.grasp_pose = pose_goal
     gripper_data.release_pose = pose_release
-    gripper_data.max_contact_force = 0.5
+    gripper_data.max_contact_force = 5.0
     gripper_data.max_contact_velocity = 0.2
-    gripper_data.max_contact_width = 0.01
+    gripper_data.max_contact_width = 0.0
 
-    serverRequest(gripper_data)
+    return serverRequest(gripper_data)
 
 
 def serverRequest(msg):
@@ -114,26 +111,34 @@ if __name__ == "__main__":
                                                cnny_thrsh=30,
                                                cnny_itr=10, area_threshold=1000)
     camera.set_reference_pixel(reference_pix, padding_around_reference_pix)
-    camera.start_streaming()  # got realsense camera object at 2
-    camera.get_image_data()
-    images = camera.detected_object_images
-    entire_image = camera.padded_image
-    cv2.imshow('entire image', entire_image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    x_cord_1 = 0
-    y_cord_1 = 0
-    z_cord_1 = 0
-    x_cord_2 = 0
-    y_cord_2 = 0
-    z_cord_2 = 0
-    orientation = 0
+    camera.start_streaming()
 
     rospy.init_node('camera_node_for_gripping', anonymous=True)
     # gripping_point_pub = rospy.Publisher('reply_gripping_point', PoseStamped, queue_size=1)
     gripping_point_sub = rospy.Subscriber('franka_current_position', Float64MultiArray,
                                           franka_current_position)
-    for img in images:
+
+    while True:
+        if current_robot_pose is None:
+            rospy.sleep(1)
+            continue
+
+        camera.get_image_data()
+        images = camera.detected_object_images
+        if not images:
+            break
+        entire_image = camera.padded_image
+        cv2.imshow('entire image', entire_image)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+        x_cord_1 = 0
+        y_cord_1 = 0
+        z_cord_1 = 0
+        x_cord_2 = 0
+        y_cord_2 = 0
+        z_cord_2 = 0
+
+        img = images[0]
         image_rgb = img['RGB']
         image_contour_xyz = img['contour']
         # got object_identifier object at 0
@@ -147,7 +152,6 @@ if __name__ == "__main__":
         # if object_name == prediction_name:
         reeb_graph.get_image_contour(entire_image, image_contour_xyz)
         gripping_points = reeb_graph.gripping_points
-
         orientation = reeb_graph.object_orientation
         for c_pts in gripping_points:
             for contour_pt in image_contour_xyz:
@@ -173,7 +177,9 @@ if __name__ == "__main__":
         cv2.destroyAllWindows()
         object_location = {'x': x_cord_1, 'y': y_cord_1, 'z': z_cord_1, 'o': orientation}
         print object_location
-        detect_object_and_gripping_point(object_location)
+        print detect_object_and_gripping_point(object_location)
+        current_robot_pose = None
+        rospy.sleep(10)
 
-    # else:
-    #     continue
+# else:
+#     continue
