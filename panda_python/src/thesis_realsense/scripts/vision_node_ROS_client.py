@@ -39,7 +39,7 @@ def detect_object_and_gripping_point(data):
     object_location_wrt_robot_baseframe = np.dot(tf_robotBaseframe_to_end_effector, object_location_wrt_endEffector)
     object_location_wrt_robot_baseframe = {'x': object_location_wrt_robot_baseframe[0][0],
                                            'y': object_location_wrt_robot_baseframe[1][0],
-                                           'z': object_location_wrt_robot_baseframe[2][0] + z_buffer}
+                                           'z': object_location_wrt_robot_baseframe[2][0]}
     object_quaternion_wrt_robot_baseframe = {'x': orientation_EF.x,
                                              'y': orientation_EF.y,
                                              'z': data['o'],
@@ -98,12 +98,12 @@ if __name__ == "__main__":
     current_robot_pose = None
 
     # name and id of objects with which the classifier was created
-    object_list_keypress = {'objC': 97, 'objD': 98}
-    object_list = {0: 'objC', 1: 'objD'}
+    object_list_keypress = {'objA': 97, 'objB': 98, 'objC': 99}
+    object_list = {0: 'objA', 1: 'objB', 2: 'objC'}
 
     # selected classifier
-    selected_model = '/home/palash/thesis/thesisML/objectSelection/models/weights_best_RGB_3class.hdf5'
-    object_identifier = objectIdentifier.ObjectIdentfier(selected_model, 4, 3, object_list)
+    selected_model = '/home/palash/thesis/thesisML/objectSelection/models/3class_2.hdf5'
+    object_identifier = objectIdentifier.ObjectIdentfier(selected_model, 3, 3, object_list)
 
     # reeb object to calculate parameter for grasping
     reeb_graph = ReebGraph.ReebGraph(gripper_width=1000, realtime_cam=True)
@@ -126,14 +126,17 @@ if __name__ == "__main__":
                                           franka_current_position)
 
     while True:
+        continue_flag = raw_input('Enter y to continue: ')
+        if continue_flag != 'y':
+            break
         # wait till the robot is ready to receive next goal command
         if current_robot_pose is None:
             rospy.sleep(1)
             continue
 
         # allow user to choose which object to pick
-        # object_name = raw_input('Enter object to grasp: ')
-        object_name = 'objC'
+        object_name = raw_input('Enter object name to grasp: ')
+        # object_name = 'objC'
 
         # do nothing if object name not included in the list is entered by user
         if object_name not in object_list_keypress.keys():
@@ -145,8 +148,8 @@ if __name__ == "__main__":
         images = camera.detected_object_images
 
         # if no suitable object is found close and end the total job
-        if not images:
-            break
+        # if not images:
+            # break
 
         # show view of the camera
         entire_image = camera.padded_image
@@ -161,55 +164,55 @@ if __name__ == "__main__":
         y_cord_2 = 0
         z_cord_2 = 0
 
-        img = images[0]
-        image_rgb = img['RGB']
-        image_contour_xyz = img['contour']
-        # got object_identifier object at 0
-        # [prediction_name, prediction_percentage] = object_identifier.predict(image_rgb).split(':')
-        # cv2.putText(image_rgb, prediction_name + ": " + str(prediction_percentage),
-        #            (20, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 255), 2)
-        # cv2.imshow('detected_obj', image_rgb)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
-        # prediction_name = "objC"
-        # if object_name == prediction_name:
+        # img = images[0]
+        for img in images:
+            image_rgb = img['RGB']
+            image_contour_xyz = img['contour']
+            # got object_identifier object at 0
+            [prediction_name, prediction_percentage] = object_identifier.predict(image_rgb).split(':')
+            cv2.putText(image_rgb, prediction_name + ": " + str(prediction_percentage),
+                       (20, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 255), 2)
+            cv2.imshow('detected_obj', image_rgb)
+            cv2.waitKey(0)
+            cv2.destroyAllWindows()
+            # # prediction_name = "objC"
+            if object_name == prediction_name:
+                # receive object contour from the image
+                reeb_graph.get_image_contour(entire_image, image_contour_xyz)
 
-        # receive object contour from the image
-        reeb_graph.get_image_contour(entire_image, image_contour_xyz)
-
-        # calculating gripping point
-        gripping_points = reeb_graph.gripping_points
-        orientation = reeb_graph.object_orientation
-        for c_pts in gripping_points:
-            for contour_pt in image_contour_xyz:
-                if contour_pt[0][0][0] == c_pts[0][0] and contour_pt[0][0][1] == c_pts[0][1]:
-                    x_cord_1 = contour_pt[1][0]
-                    y_cord_1 = contour_pt[1][1]
-                    z_cord_1 = contour_pt[1][2]
-                if contour_pt[0][0][0] == c_pts[1][0] and contour_pt[0][0][1] == c_pts[1][1]:
-                    x_cord_2 = contour_pt[1][0]
-                    y_cord_2 = contour_pt[1][1]
-                    z_cord_2 = contour_pt[1][2]
-            cv2.circle(entire_image, c_pts[0], 1, (255, 255, 0), -1)
-            cv2.circle(entire_image, c_pts[1], 1, (0, 255, 255), -1)
-            cv2.putText(entire_image, "({o:.1f})".format(o=orientation), (50, 50),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 0), 1)
-            cv2.putText(entire_image, "({x:.1f}, {y:.1f}, {z:.1f})".format(x=x_cord_1, y=y_cord_1, z=z_cord_1),
-                        c_pts[0],
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 0), 1)
-            cv2.putText(entire_image, "({x:.1f}, {y:.1f}, {z:.1f})".format(x=x_cord_2, y=y_cord_2, z=z_cord_2),
-                        c_pts[1],
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 255, 255), 1)
-
-        # show gripping points in image
-        cv2.imshow('entire image', entire_image)
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
-        object_location = {'x': x_cord_1, 'y': y_cord_1, 'z': z_cord_1, 'o': orientation}
-        print object_location
-        print detect_object_and_gripping_point(object_location)
-        current_robot_pose = None
-        rospy.sleep(10)
+                # calculating gripping point
+                gripping_points = reeb_graph.gripping_points
+                orientation = reeb_graph.object_orientation
+                for c_pts in gripping_points:
+                    for contour_pt in image_contour_xyz:
+                        if contour_pt[0][0][0] == c_pts[0][0] and contour_pt[0][0][1] == c_pts[0][1]:
+                            x_cord_1 = contour_pt[1][0]
+                            y_cord_1 = contour_pt[1][1]
+                            z_cord_1 = contour_pt[1][2]
+                        if contour_pt[0][0][0] == c_pts[1][0] and contour_pt[0][0][1] == c_pts[1][1]:
+                            x_cord_2 = contour_pt[1][0]
+                            y_cord_2 = contour_pt[1][1]
+                            z_cord_2 = contour_pt[1][2]
+                    cv2.circle(entire_image, c_pts[0], 1, (255, 255, 0), -1)
+                    cv2.circle(entire_image, c_pts[1], 1, (0, 255, 255), -1)
+                    cv2.putText(entire_image, "({o:.1f})".format(o=orientation), (50, 50),
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 0), 1)
+                    cv2.putText(entire_image, "({x:.1f}, {y:.1f}, {z:.1f})".format(x=x_cord_1, y=y_cord_1, z=z_cord_1),
+                                c_pts[0],
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 0), 1)
+                    cv2.putText(entire_image, "({x:.1f}, {y:.1f}, {z:.1f})".format(x=x_cord_2, y=y_cord_2, z=z_cord_2),
+                                c_pts[1],
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 255, 255), 1)
+                #
+                # show gripping points in image
+                cv2.imshow('entire image', entire_image)
+                cv2.waitKey(0)
+                cv2.destroyAllWindows()
+                object_location = {'x': x_cord_1, 'y': y_cord_1, 'z': z_cord_1, 'o': orientation}
+                print object_location
+                print detect_object_and_gripping_point(object_location)
+                current_robot_pose = None
+                rospy.sleep(10)
 
 # else:
 #     continue
